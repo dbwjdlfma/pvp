@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빙술사 - 쓸모PVP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="wiki-container">
+        <!-- 헤더 및 사이드바 생략 -->
+        <div class="wiki-container">
+            <header class="wiki-header">
+                <h1>쓸모PVP</h1>
+                <div id="version"></div>
+            </header>
+    
+            <div class="wiki-body">
+                <aside class="wiki-sidebar">
+                    <div class="sidebar-section">
+                        <h3>게임 정보</h3>
+                        <ul>
+                            <li><a href="update.html">업데이트 내역</a></li>
+                            <li><a href="jobs.html">직업</a></li>
+                            <li><a href="maps.html">맵</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- 나머지 사이드바 동일 -->
+                </aside>
+        <main class="wiki-content">
+            <article class="wiki-article">
+                <div class="article-header">
+                    <h1>빙술사</h1>
+                </div>
+                
+                    <!-- 썸네일이 있는 동영상 -->
+                    <div class="media-container">
+                        <video 
+                            controls 
+                            class="job-media"
+                            poster="videos/jobs/ice.webp"
+                            preload="metadata"
+                        >
+                            <source src="videos/jobs/ice.webm" type="video/webm">
+                            브라우저가 동영상을 지원하지 않습니다.
+                        </video>
+                        <div class="play-button-overlay">
+                            <div class="play-icon">▶</div>
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div class="job-info">
+                        <h3>기본 정보</h3>
+                        <ul class="job-stats">
+                            <li>역할<br>근접/광역/딜러</li>
+                            <br><li>스탯<br>HP : 20 | 쿨타임 : X | 이동속도 : 0.1 | 공격속도 : 4 | 공격력 : 1</li>
+                            <br><li>능력<br>얼음 마법을 사용해 최대 5m 까지 얼음 빔을 5개 발사합니다<br>블록(일부 블록 제외)에 쏘면 블록은 1.5초간 얼음으로 변하고 플레이어 이외의 엔티티는 얼어짐과 동시에 터집니다<br>플레이어에게 맞추면 빔 한 개에 게이지를 50씩 올리며 20000을 채우면 얼게 된다<br>게이지는 지속적으로 50씩 감소된다 <br>얼린 플레이어는 밀어버릴 수 있으며 벽에 박으면 3.5의 대미지와 함께 구속3을 2초동안 줍니다 <br>플레이어한테 박으면 박힌 플레이어에겐 1.5의 대미지도 동시에 줍니다.<br></li>
+                            <!-- 나머지 정보 -->
+                        </ul>
+                        
+                        <!-- 나머지 내용 -->
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
