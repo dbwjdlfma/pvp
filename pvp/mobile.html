@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>쓸모PVP</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    .wiki-container {
+max-width: 1200px;
+height: 100vh;
+margin: 0 auto;
+background-color: #2d2d2d;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}  
+</style>
+</head>
+<body>
+<div class="wiki-container">
+<header class="wiki-header">
+<h1>쓸모PVP</h1>
+<div id="version"></div>
+</header>
+
+<main class="wiki-content">
+<article>
+<h1 style="text-align: center; font-size:50px">아직<br>모바일 환경은<br>지원 하지<br>않습니다</h1>
+</article>
+</main>
+</div>
+</div>
+<script>
+// D-Day 설정 (2025-12-24 자정)
+const targetDate = new Date('2025-12-24T00:00:00');
+const late = new Date('2026-01-24T00:00:00');
+
+function updateDisplay() {
+const now = new Date();
+const messageElement = document.getElementById('soon');
+
+if (now < targetDate) {
+messageElement.innerHTML = ``;
+}
+if (now > late) {
+messageElement.innerHTML = ``;
+}
+}
+
+updateDisplay();
+</script>
+
+</body>
+</html>
