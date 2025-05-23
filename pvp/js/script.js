@@ -8,7 +8,7 @@ function isMobileDevice() {
 document.addEventListener('DOMContentLoaded', function() {
     if (isMobileDevice()) {
         console.log('모바일 기기 감지됨, 리다이렉트 중...');
-        window.location.href = 'https://example.com/mobile-page.html';
+        window.location.href = 'https://www.youtube.com';
         // 또는 window.location.replace() 사용 가능
     }
 });
