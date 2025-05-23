@@ -8,7 +8,7 @@ function isMobileDevice() {
 document.addEventListener('DOMContentLoaded', function() {
     if (isMobileDevice()) {
         console.log('모바일 기기 감지됨, 리다이렉트 중...');
-        window.location.href = 'https://www.youtube.com';
+        window.location.href = 'https://dbwjdlfma.github.io/pvp/pvp/mobile.html';
         // 또는 window.location.replace() 사용 가능
     }
 });
