@@ -1,13 +1,19 @@
-
-// 사용자 에이전트 체크 함수
-function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+// 더 정확한 모바일 감지 함수
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+        (window.innerWidth <= 768 && window.innerHeight <= 1024);
 }
 
-// 모바일 기기일 경우 리다이렉트
-if (isMobileDevice()) {
-    window.location.href = "https://www.youtube.com";
-}
+// DOM이 완전히 로드된 후 실행
+document.addEventListener('DOMContentLoaded', function() {
+    if (isMobile()) {
+        // 리다이렉트 전 콘솔 로그로 확인
+        console.log('Mobile device detected. Redirecting...');
+        window.location.replace('https://example.com/mobile-page.html');
+        // 또는 window.location.href = 'https://example.com/mobile-page.html';
+    }
+});
+
 
 const version = document.getElementById("version");
 version.textContent = "V1.1.7";
