@@ -1,19 +1,17 @@
-// 더 정확한 모바일 감지 함수
-function isMobile() {
+// 모바일 감지 함수
+function isMobileDevice() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
         (window.innerWidth <= 768 && window.innerHeight <= 1024);
 }
 
-// DOM이 완전히 로드된 후 실행
+// DOM이 로드된 후 실행
 document.addEventListener('DOMContentLoaded', function() {
-    if (isMobile()) {
-        // 리다이렉트 전 콘솔 로그로 확인
-        console.log('Mobile device detected. Redirecting...');
-        window.location.replace('https://example.com/mobile-page.html');
-        // 또는 window.location.href = 'https://example.com/mobile-page.html';
+    if (isMobileDevice()) {
+        console.log('모바일 기기 감지됨, 리다이렉트 중...');
+        window.location.href = 'https://example.com/mobile-page.html';
+        // 또는 window.location.replace() 사용 가능
     }
 });
-
 
 const version = document.getElementById("version");
 version.textContent = "V1.1.7";
