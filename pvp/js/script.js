@@ -1,3 +1,14 @@
+
+// 사용자 에이전트 체크 함수
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+// 모바일 기기일 경우 리다이렉트
+if (isMobileDevice()) {
+    window.location.href = "https://www.youtube.com";
+}
+
 const version = document.getElementById("version");
 version.textContent = "V1.1.7";
 version.style.fontSize = "0.9em";
