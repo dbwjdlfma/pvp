@@ -7,7 +7,7 @@ function isMobileDevice() {
 // DOM이 로드된 후 실행
 document.addEventListener('DOMContentLoaded', function() {
     if (isMobileDevice()) {
-        window.location.href = 'https://dbwjdlfma.github.io/pvp/pvp/mobile.html';
+        window.location.href = 'https://dbwjdlfma.github.io/pvp/pvp/mobile';
         // 또는 window.location.replace() 사용 가능
     }
 });
