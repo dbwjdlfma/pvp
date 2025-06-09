@@ -38,6 +38,9 @@ sidebar.innerHTML = `
   </ul>
 </div>`;
 
+// 검색
+
+
 // 검색 기능 구현 (모바일 대응 수정)
 function initializeSearch() {
   const jobSearch = document.getElementById("jobSearch");
@@ -52,7 +55,8 @@ function initializeSearch() {
   function performSearch() {
     const searchTerm = jobSearch.value.toLowerCase().trim();
     jobCards = document.querySelectorAll(".job-card"); // 항상 최신 카드 목록 가져오기
-
+// 검색 버튼 이벤트 추가 (맨 아래에 삽입)
+document.getElementById("searchButton").addEventListener("click", performSearch);
     // 모든 하이라이트 제거
     jobCards.forEach(card => {
       card.classList.remove("highlight");
@@ -96,6 +100,19 @@ function initializeSearch() {
     }
   });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // D-Day 설정 (2025-12-24 자정)
 const targetDate2 = new Date('2025-09-26T00:00:00');
