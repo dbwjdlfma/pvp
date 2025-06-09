@@ -1,3 +1,6 @@
+    response.setHeader( "Pragma", "no-cache" );
+    response.setDateHeader( "Expires", -1 );
+    response.setHeader( "Cache-Control", "no-cache" );
 // 버전 표시
 const version = document.getElementById("version");
 version.textContent = "V1.1.7";
