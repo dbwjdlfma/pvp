@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>쓸모PVP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="videos/diamond.webp">
+</head>
+<!-- 나머지 내용은 동일 -->
+<body>
+<div id="mb"></div>
+
+
+    
+<div class="wiki-container">
+<header class="wiki-header">
+<h1>쓸모PVP</h1>
+
+<div id="version"></div>
+</header>
+
+<div class="wiki-body">
+<aside class="wiki-sidebar">
+<div id="sidebar-section">
+</div>
+</aside>
+
+<main class="wiki-content">
+<article>
+<h2>쓸모PVP</h2>
+<div class="quick-links">
+<h3>주요 내용</h3>
+
+
+<a href="update.html">V1.1.8 업데이트가 되었습니다</a><br>
+<a href="job-santa.html" id="soon">크리스마스 한정 직업 '산타'가 추가 되었습니다</a>
+</article>
+</main>
+</div>
+</div>
+<script>
+// D-Day 설정 (2025-12-24 자정)
+const targetDate = new Date('2025-12-24T00:00:00');
+const late = new Date('2026-01-24T00:00:00');
+
+function updateDisplay() {
+const now = new Date();
+const messageElement = document.getElementById('soon');
+
+if (now < targetDate) {
+messageElement.innerHTML = ``;
+}
+if (now > late) {
+messageElement.innerHTML = ``;
+}
+}
+
+updateDisplay();
+
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
