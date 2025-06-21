@@ -1,8 +1,35 @@
+// 최초 접속인지 확인하는 함수
+function isFirstVisit() {
+    // sessionStorage 사용 (탭 닫으면 초기화)
+    if (!sessionStorage.getItem('visited')) {
+        sessionStorage.setItem('visited', 'true');
+        return true; // 최초 접속
+    }
+    return false; // 재방문
+}
+
+// 캐시 무효화 후 새로고침
+function forceRefresh() {
+    const url = new URL(window.location.href);
+    url.searchParams.set('nocache', Date.now()); // 캐시 방지용 파라미터 추가
+    
+    // 히스토리에 남기지 않고 페이지 이동 (뒤로가기 방지)
+    window.location.replace(url.toString());
+}
+
+// 페이지 로드 시 실행
+window.addEventListener('load', function() {
+    // 최초 접속일 때만 실행
+    if (isFirstVisit()) {
+        console.log("최초 접속 감지 → 캐시 무효화 새로고침 실행");
+        forceRefresh();
+    }
+});
 // DOM 요소 선택 및 버전 표시
 function displayVersion() {
   const version = document.getElementById("version");
   if (version) {
-    version.textContent = "V1.1.9";
+    version.textContent = "V1.1.94123412341234";
     Object.assign(version.style, {
       fontSize: "0.9em",
       position: "absolute",
