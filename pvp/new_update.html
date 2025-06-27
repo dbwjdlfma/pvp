@@ -21,15 +21,21 @@
     <meta name="theme-color" content="#55FF55">
 
     <script>
-        // 캐시 방지를 위한 랜덤 파라미터 추가
-        function addCacheBuster() {
-            const randomId = Math.floor(Math.random() * 1000000);
-            if(!window.location.search.includes('?v=')) {
-                window.location.href = window.location.href.split('?')[0] + '?v=' + randomId;
-                return true;
-            }
-            return false;
+    // 항상 랜덤 파라미터를 붙여 새로고침 (기존 파라미터 무시)
+    function addCacheBuster() {
+        const randomId = Math.floor(Math.random() * 1000000);
+        const baseUrl = window.location.origin + window.location.pathname;
+        window.location.href = baseUrl + '?v=' + randomId;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // 파라미터가 없거나, v= 파라미터가 없으면 새로고침
+        if (!window.location.search.includes('v=')) {
+            addCacheBuster();
+        } else {
+            window.location.href = 'https://dbwjdlfma.github.io/pvp/pvp/update.html';
         }
+    });
         
         document.addEventListener('DOMContentLoaded', function() {
             if(!addCacheBuster()) {
