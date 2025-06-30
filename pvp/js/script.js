@@ -3,7 +3,7 @@
 function displayVersion() {
   const version = document.getElementById("version");
   if (version) {
-    version.textContent = "V1.3.0";
+    version.textContent = "V1.3.1";
     Object.assign(version.style, {
       fontSize: "0.9em",
       position: "absolute",
