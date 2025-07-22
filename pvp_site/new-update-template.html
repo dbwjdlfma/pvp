@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>쓸모PVP</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="videos/diamond.webp">
+</head>
+<body>
+<!-- JavaScript가 자동으로 공통 헤더와 사이드바를 생성합니다 -->
+
+<div class="article-header">
+<h1>새 업데이트</h1>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+// 페이지가 로드된 후 실행
+document.addEventListener('DOMContentLoaded', function() {
+    // 페이지 제목 설정
+    PVPUtils.setPageTitle('새 업데이트');
+    
+    // 업데이트 카드들 추가
+    const updates = [
+        {
+            version: 'V1.5.0',
+            date: '2025-07-25',
+            title: '새로운 기능 추가',
+            content: '새로운 기능에 대한 설명을 여기에 작성하세요.<br>여러 줄로 작성할 수 있습니다.',
+            titleColor: 'rgb(153, 0, 255)',
+            contentColor: 'white'
+        },
+        {
+            version: 'V1.4.9',
+            date: '2025-07-24',
+            title: '버그 수정',
+            content: '수정된 버그들에 대한 설명을 여기에 작성하세요.',
+            titleColor: 'rgb(255, 153, 0)',
+            contentColor: 'white'
+        }
+    ];
+    
+    // 각 업데이트 카드 생성 및 추가
+    updates.forEach(update => {
+        const updateCard = PVPUtils.createUpdateCard(
+            update.version,
+            update.date,
+            update.title,
+            update.content,
+            update.titleColor,
+            update.contentColor
+        );
+        PVPUtils.addContent(updateCard);
+    });
+});
+</script>
+</body>
+</html>

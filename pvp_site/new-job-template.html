@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>쓸모PVP</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="videos/diamond.webp">
+</head>
+<body>
+<!-- JavaScript가 자동으로 공통 헤더와 사이드바를 생성합니다 -->
+
+<div class="article-header">
+<h1>새 직업 이름</h1>
+</div>
+
+<!-- 페이지 로드 후 JavaScript로 콘텐츠 생성 -->
+<div id="dynamic-content"></div>
+
+<script src="js/script.js"></script>
+<script>
+// 페이지가 로드된 후 실행
+document.addEventListener('DOMContentLoaded', function() {
+    // 페이지 제목 설정
+    PVPUtils.setPageTitle('새 직업 이름');
+    
+    // 유튜브 비디오 추가 (videoId만 변경하면 됩니다)
+    const videoContent = PVPUtils.createVideoEmbed('THxWwYB_qtE');
+    PVPUtils.addContent(videoContent);
+    
+    // 직업 정보 추가
+    const jobData = {
+        role: '근거리/단일/딜러',
+        stats: 'HP : 30 | 쿨타임 : 15s | 이동속도 : 0.1 | 공격속도 : 4 | 공격력 : 1',
+        abilities: '[스킬명] : 스킬 설명을 여기에 작성하세요.<br>[다른 스킬] : 다른 스킬 설명'
+    };
+    
+    const jobCard = PVPUtils.createJobCard(jobData);
+    PVPUtils.addContent(jobCard);
+    
+    // 추가 정보나 설명
+    const additionalInfo = `
+        <div class="additional-info">
+            <h3>추가 정보</h3>
+            <p>이 직업에 대한 추가 설명이나 팁을 여기에 작성하세요.</p>
+        </div>
+    `;
+    PVPUtils.addContent(additionalInfo);
+});
+</script>
+</body>
+</html>
