@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>쓸모PVP</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="videos/diamond.webp">
+</head>
+<body>
+<!-- JavaScript가 자동으로 공통 헤더와 사이드바를 생성합니다 -->
+
+    <div class="article-header">
+        <h1>업데이트 내역</h1>
+    </div>
+    <div class="update-list">
+        <div class="update-card">
+            <h>V1.4.9</h><text style="color:#888"> (2025-07-25)</text>
+            <h2></h2>
+            <h1 style="color: rgb(153, 0, 255);">직업</h1>
+            <text style="color: white;">
+                <span style="color: burlywood;">[광부]</span><br>
+                - 쿨타임 15초 → <span style="color: red;">20초</span><br>
+                <br>
+                <span style="color: burlywood;">[판사]</span><br>
+                <strong>모든 능력이 즉시 발동으로 변경됩니다</strong><br>
+                - 누군가를 죽일 시 65% 확률로 누군가가 즉시 죽고, 35% 확률로 판사가 죽음<br>
+                &nbsp;&nbsp;(단, 판사가 직접 누군가를 죽인 경우에는 이 능력이 발동되지 않음)<br>
+                - 판사가 공격받을 시 1% 확률로 10m 이내의 유저가 1의 대미지를 받음<br>
+                <br>
+                <span style="color: burlywood;">[빙술사]</span><br>
+                - 얼음빔에 맞은 유저가 아닌 엔티티들은 즉사 → <span style="color: red;">빔당 0.5 대미지</span><br>
+                - 얼기 위한 게이지가 50씩 내려가던 기능 삭제<br>
+                - 얼기 위한 게이지량 25000 → <span style="color: red;">50000</span><br>
+                - 얼음이 더 빨리 미끄러지게 변경<br>
+                - 유저가 미끄러지던 얼음에 박았지만 대미지가 안 들어가던 버그 수정<br>
+                - 유저가 미끄러지는 얼음에 박히는 범위 1m → <span style="color: blue;">2m</span><br>
+                - 미끄러지던 얼음이 아무것도 박지 않았을 때 얼어있던 유저가 받는 구속 효과 삭제<br>
+                <br>
+                <span style="color: burlywood;">[유령]</span><br>
+                - 능력 사용 후 유령을 소환하기 위한 시간 2.5초 → <span style="color: blue;">3초</span><br>
+                - 부활 전에 벽을 통과할 때 대미지를 받지 않음 → <span style="color: red;">1의 대미지를 받음</span><br>
+                <br>
+                <span style="color: burlywood;">[타이쿠너]</span><br>
+                <b>&lt;기본 지속 효과&gt;</b><br>
+                - 기본 공격의 대미지 0.2 → <span style="color: blue;">0.5</span><br>
+                - 기본 공격 시 1 → <span style="color: blue;">2</span>의 P가 증가<br>
+                - 크리티컬 공격 시 2 → <span style="color: blue;">3</span>의 P가 증가<br>
+                <br>
+                <b>&lt;모든 공격 스킬&gt;</b><br>
+                - 공격 스킬 사용 시 타이쿠너를 제외한 모든 플레이어에게 데미지가 들어가던 버그 수정<br>
+                <br>
+                <b>&lt;파워 강화&gt;</b><br>
+                - 기본 지속 효과가 강화되면 기본 공격 시 2 → <span style="color: blue;">4</span>의 P가 증가<br>
+                - 크리티컬 공격 시 <span style="color: blue;">5</span>의 P가 증가<br>
+                <br>
+                <span style="color: burlywood;">[뱀파이어]</span><br>
+                - 뱀파이어의 스택이 오르지 않던 버그 수정<br>
+            </text>
+        </div>
+    </div><br>
+
+
+<div class="update-list">
+    <div class="update-card">
+        <h>V1.4.8</h><text style="color:#888"> (2025-07-24)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">산타</h1>
+        <text style="color: white;">
+            - 꾸러미 아이템이 0번~5번 핫바까지 나오게 변경<br>
+            - 썰매를 타기 전에 3초 동안 멈추는 시간 추가<br>
+            - 썰매를 타고 내려가는 시간 6초 → <span style="color:red;">5초</span><br>
+            - 가스 근처에 있을 때 실명되는 효과 추가<br>
+        </text>
+        <h1 style="color: rgb(153, 0, 255); margin-top: 25px;">유튜버</h1>
+        <text style="color: white;">
+            - 해킹 당할 때 발광이 아닌 상세 좌표가 뿌려지게 변경<br>
+        </text>
+    </div>
+</div><br>
+
+<div class="update-list">
+    <div class="update-card">
+        <h>V1.4.7</h><text style="color:#888"> (2025-07-24)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">직업   </h1>
+        <text style="color: white;">
+            <span style="color: burlywood;">[거너]</span><br>
+            - 플레이어를 죽일 시 총알이 10발 충전됨<br>
+            - 소총에서 산탄총으로 바꾸는 시간 3초 → <span style="color: red;">5초</span><br>
+            - 처음 시작할 때 소총 10발 → <span style="color:blue;">20발</span><br>
+            - 총을 들었을 때 느려지는 속도0.05 →  <span style="color:red;">0.04</span><br>
+            <br>
+            <span style="color: aqua;">[소총]</span><br>
+            - 최대 대미지 1.5 → <span style="color:blue;">1.6</span><br>
+            - 거리 구간이 <span style="color:blue;">~25m / 26m~50m / 51m~100m</span>로 변경<br>
+            - 벽 통과 시 대미지 감소량 0.6 → <span style="color:blue;">0.3</span><br>
+            <br>
+            <span style="color: aqua;">[산탄총]</span><br>
+            - 재장전 쿨타임 1초 →<span style="color:red;"> 1.5초</span><br>
+            - 총알 간 간격이 더 좁아짐<br>
+            - 총알 당 대미지 0.4 → <span style="color:red;">0.3</span><br>
+            <br>
+            <span style="color: burlywood;">[유령]</span><br>
+            - 능력 지속 시간 10초 → <span style="color:red;">7초</span><br>
+            - 능력 시작 후 유령 소환 가능 시간 1.5초 → <span style="color:blue;">2.5초</span><br>
+            - 망령의 체력 0.1 → <span style="color:blue;">2</span><br>
+            - 강화된 망령의 체력 1 → <span style="color:blue;">2</span><br>
+            <br>
+            <span style="color: burlywood;">[샌즈]</span><br>
+            - 공격 속도 3 → <span style="color:blue;">5</span><br>
+            - 공격력이 31이던 버그 수정<br>
+            - 공격력 29.9 →<span style="color:red;"> 20</span><br>
+            <br>
+            <span style="color: burlywood;">[타이쿠너]</span><br>
+            <b>&lt;기본 지속 효과&gt;</b><br>
+            기본 공격 시 1의 P가 증가하며, 크리티컬 공격 시 2의 P가 증가한다.<br>
+            또한 적 플레이어를 직접 죽일 시 노예가 최대 3명까지 1명씩 증가하며, 노예의 수에 따라 1초마다 각각 1p, 2p, 3p가 증가한다.<br>
+            <br>
+            <b>&lt;돈 뿌리기(공격 스킬)&gt;</b><br>
+            15p를 소모하며 주변 3~3.5칸 거리의 모든 엔티티에게 2.5의 데미지를 준다.<br>
+            <br>
+            <b>&lt;서류가방 내려치기(공격 스킬)&gt;</b><br>
+            25p를 소모하며 전방 2x3 (가로 x 세로) 범위에 있는 모든 플레이어에게 6의 데미지를 준다.<br>
+            <br>
+            <b>&lt;구박하기(지원 스킬)&gt;</b><br>
+            12p를 소모하며 약 3.5칸 거리에 있는 플레이어들 중 가장 가까운 플레이어 1명에게 탈진(둔화 60% 및 점프 불가)을 부여하며 적중 시 7p를 회복합니다.<br>
+            <br>
+            <b>&lt;파워 강화(지원 스킬)&gt;</b><br>
+            40p를 소모하며 기본 지속 효과를 강화합니다. 기본 공격 시 2의 P가 증가하며, 크리티컬 공격 시 3의 P가 증가하게 강화됩니다.<br>
+            <br>
+            <span style="color: burlywood;">[즐예]</span><br>
+            - 능력을 사용하기 위한 장판의 최소 생성량 30개 → <span style="color:red;">50개</span><br>
+        </text>
+        <h1 style="color: rgb(153, 0, 255); margin-top: 25px;">맵</h1>
+        <text style="color: white;">
+            신규 맵 &lt;마진이 게임&gt;이 추가 됩니다<br>
+        </text>
+        <button class="close"><a href="0event_jobs.html">자세히 알아 보기</a></button>
+        <button class="toggle-sub-updates">▼ 서브 업데이트 보기</button>
+        <div class="sub-updates">
+            <h>V1.4.7.1</h><text style="color:#888"> (2025-07-24)</text>
+            <h2></h2>
+            <h1 style="color: rgb(153, 0, 255);">기타</h1>
+            <text style="color: white;">
+                승률이 안오르던 버그 수정
+            </text>
+        </div>
+    </div>
+</div><br></div>
+
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.4.6</h><text style="color:#888"> (2025-07-13)</text>
+<h2></h2>
+<h1 style="color: white;">클래식 모드가 추가됩니다</h1>
+<text style="color: white;">
+<br>2021년 9월 24일 처음으로 맵이 분리되어 만들어지던 그 시절의 능력으로 바뀝니다<br>
+<button class="close"><a href="0event_jobs.html">자세히 알아 보기</a></button><br>
+<br>
+</text>
+
+</div></div><br>
+
+
+<div class="update-list">
+    <div class="update-card">
+        <h>V1.4.5</h><text style="color:#888"> (2025-07-10)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">팀전</h1>
+        <text style="color: white;">
+            팀전의 게임 시작 방식이 변경됩니다.<br>
+            이제 팀전에서는 로비에서 직업을 고르는 것이 아니라, 게임을 시작한 후에 직업을 선택합니다.<br><br>
+            게임이 시작되면 먼저 15초 동안 팀을 고를 수 있습니다.<br>
+            만약 어떤 팀에 한 명도 없다면 다시 로비로 돌아갑니다.<br><br>
+            팀 선택이 완료되면, 로비에서 직업을 고르던 것처럼 직업을 선택할 수 있습니다.<br>
+            모든 팀이 동시에 직업을 선택하며, 같은 팀에서는 같은 직업을 고를 수 없습니다.<br>
+            직업 선택은 20초 동안 진행되며, 직업을 고르지 않은 유저는 랜덤으로 직업이 정해집니다.<br>
+            <span style="color: red;">*주의: 아직 일부 직업은 같은 팀원을 공격할 수 있거나,<br>다른팀에서 같은 직업이 나오면 능력 사용시 버그가 발생합니다</span>
+        </text>
+    </div>
+</div><br>
+
+<div class="update-list">
+    <div class="update-card">
+        <h>V1.4.4</h><text style="color:#888"> (2025-07-09)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255); font-size: 2em;">스피드런</h1>
+        <text style="color: #fff;">
+            <span style="display:inline-block; margin-top:10px; margin-bottom:5px; color:rgb(153, 0, 255); font-size:1.3em; font-weight:bold;">직업 변경</span><br>
+            <text style="color: burlywood;">[유령]</text><br>
+            - 능력 사용 시간이 <text style="color:blue;">3.75초</text>로 변경<br>
+            - 쿨타임이 <text style="color:blue;">10초</text>로 변경<br>
+            <br>
+            <text style="color: burlywood;">[광부]</text><br>
+            - [튀어오르기]가 능력이 끝날 때까지 계속 사용할 수 있게 변경<br>
+            <br>
+            <text style="color: burlywood;">[배터리]</text><br>
+            - 충전 시간이 <text style="color:blue;">5초</text>로 변경<br>
+            - 충전 시 <text style="color:blue;">속도3</text> 효과 부여<br>
+            - 힘 효과 삭제<br>
+            <br>
+            <text style="color: burlywood;">[삑궷츢]</text><br>
+            - 능력 사용 시 게임이 끝나던 버그 수정<br>
+            - 10블록 이동하면 능력 사용 가능하게 변경<br>
+            - 박아도 속박이 걸리지 않게 변경<br>
+            - 쿨타임 삭제<br>
+            <br>
+            <span style="display:inline-block; margin-top:15px; margin-bottom:5px; color:#00bcd4; font-size:1.3em; font-weight:bold;">맵 변경</span><br>
+            <text style="color: burlywood;">[오두막]</text> 맵의 구조가 일부 변경됩니다<br>
+            <text style="color: burlywood;">[얼음집]</text> 추가<br>
+            <br>
+            <span style="display:inline-block; margin-top:15px; margin-bottom:5px; color:#00bcd4; font-size:1.3em; font-weight:bold;">기타</span><br>
+            골인지점 판정이 살짝 널널해지게 변경<br>
+        </text>
+    </div></div><br>
+
+
+<div class="update-list">
+    <div class="update-card">
+        <h>V1.4.3</h><text style="color:#888"> (2025-07-03)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">스피드런</h1>
+        <text style="color: white;">
+            스피드런 직업이 밸런스 패치<br>
+            이제 게임 시작 전에 직업을 선택하는 것이 아니라, 게임이 시작된 후에 직업을 선택하는 방식으로 변경됩니다.<br>
+            팀을 고르면서 상대의 직업 밴 시스템을 사용할지 결정할 수 있으며,<br>
+            사용한다면 3개의 직업을 밴할 수 있고, 사용하지 않는다면 바로 직업 선택으로 넘어갑니다.
+        </text>
+    </div></div><br>
+
+<div class="update-list">
+    <div class="update-card">
+        <h>V1.4.2</h><text style="color:#888"> (2025-07-03)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">팀전</h1>
+        <text style="color: white;">
+            팀전의 게임방식이 변경됩니다.<br>
+            이제 게임 시작 전에 직업을 선택하는 것이 아니라, 게임이 시작된 후에 직업을 선택하는 방식으로 변경됩니다.<br>
+            팀을 고르면서 상대의 직업 밴 시스템을 사용할지 결정할 수 있으며,<br>
+            사용한다면 3개의 직업을 밴할 수 있고, 사용하지 않는다면 바로 직업 선택으로 넘어갑니다.
+        </text>
+    </div>
+</div><br>
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.4.1</h><text style="color:#888"> (2025-07-03)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">직업</h1>
+<text style="color: white;">
+<text style="color: burlywood;">[기생충]</text><br>
+- 기생 당했을 때 10초 동안 잠복기를 가진 후 3초마다 환각 발생<br>
+- 기생당하고 16초 이후 5초 동안 0.3의 대미지를 계속 받으며 이후 기생이 풀림<br>
+- 기생충이 살아 있는 시간 5초로 감소<br>
+- 기생충에 속도3 효과 추가<br>
+- 기본 속도 0.07 → <text style="color: rgb(0, 89, 255);">0.1</text><br>
+- 능력 재사용 쿨타임 15초 → <text style="color: rgb(0, 89, 255);">10초</text><br>
+- 기생충이 대미지를 3을 준다는 설명 오류 수정<br>
+<br>
+<text style="color: burlywood;">[거너]</text><br>
+- 산탄총의 총알 당 대미지 0.35 → <text style="color: rgb(0, 89, 255);">0.4</text><br>
+- 설명에 총알당 대미지가 0.35가 아닌 0.4로 표기되던 오류 수정<br>
+
+<text style="color: aqua;">[소총]</text><br>
+- 0~15m 대미지 1 → <text style="color: rgb(0, 89, 255);">1.5</text><br>
+- 16~40m 대미지 0.7 → <text style="color: rgb(0, 89, 255);">1</text><br>
+- 41m~ 대미지 0.2 → <text style="color: rgb(0, 89, 255);">0.6</text><br>
+- 벽 통과 시 대미지 감소량 0.3 → <text style="color: rgb(0, 89, 255);">0.6</text><br>
+<br>
+<text style="color: burlywood;">[유튜버]</text><br>
+- 저격 성공 시 감소하는 구독자 수 1만명 → <text style="color: rgb(0, 89, 255);">1.5만명</text><br>
+- 저격 성공 시 생기던 발광효과 삭제<br>
+- 저격 당한 플레이어에게 6초간 위더5, 3초간 구속3 효과 부여<br>
+- 능력1의 구독자 변화율 100~3000 → <text style="color: red(0, 89, 255);">10~2900</text><br>
+<br>
+<text style="color: burlywood;">[정원사]</text><br>
+- 씨앗이 날아가는 속도와 거리 증가<br>
+- 씨앗에 닿는 거리 1m → <text style="color: rgb(0, 89, 255);">1.5m</text><br>
+<br>
+<text style="color: burlywood;">[산타]</text><br>
+- 공중에서 왼손들기를 하면 쿨타임이 작동되던 버그 수정<br>
+- 몬스터 우리에서 좀비가 땅에서 바로 소환되게 변경<br>
+- 독 구름이 땅에서 바로 소환되게 변경<br>
+- 폭탄이 터지는 거리 5 → <text style="color: rgb(0, 89, 255);">7</text><br>
+- 폭탄에 의해 받는 대미지 6 → <text style="color: rgb(0, 89, 255);">3</text><br>
+- 썰매를 탈 때 올라가는 최대 높이 증가<br>
+</text>
+</div></div><br>
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.4.0</h><text style="color:#888"> (2025-07-03)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">게임</h1>
+<text style="color: white;">
+모든 직업들의 체력이 10씩 늘어납니다(샌즈 제외)
+</text>
+</div></div><br>
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.3.4</h><text style="color:#888"> (2025-07-03)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">칭호</h1>
+<text style="color: white;">
+칭호 시스템이 추가 됩니다 <br>
+칭호는 특정 조건을 만족하면 얻을 수 있으며 칭호 변경은 빠른 행동키 -> 게임 설정에서 할 수 있습니다<br>
+현재 얻을 수 있는 칭호는 킬전,데스매치 최다 우승자,특별능력보유자 입니다
+</text>
+</div></div><br>
+
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.3.3</h><text style="color:#888"> (2025-07-02)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">직업</h1>
+<text style="color: white;">
+<text style="color: burlywood;">[샌즈]</text><br>
+공격력 19.9 → <text style="color: rgb(0, 89, 255);">29.9</text><br>
+<text style="color: burlywood;">[로봇]</text><br>
+체력 25 → <text style="color: rgb(0, 89, 255);">35</text><br>
+</text>
+<h1 style="color: rgb(153, 0, 255);">게임</h1>
+<text style="color: white;">
+이제 스탯을 제외한 모든 능력은 20초 뒤부터 적용이 됩니다
+<text style="color: red;"><b>*판사는 포함되지 않습니다</b></text>
+<h1 style="color: rgb(153, 0, 255);">스피드런</h1>
+매주 기록이 초기화 되며 그 주의 베스트타임을 기록한 플레이어에겐 베스트 스코어 칭호가 붙으며
+만약 연속으로 얻게 되면 관련 칭호를 얻을 수 있습니다
+</text>
+</div></div><br>
+
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.3.2</h><text style="color:#888"> (2025-06-30)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">직업</h1>
+<text style="color: white;">
+<text style="color: burlywood;">[산타]</text><br>
+선물 유지 시간 3초 -> <text style="color: red;">5초<br>
+썰매가 사라지면 선물 주는 시간이 유지 되던 버그 수정<br>
+<h1 style="color: rgb(153, 0, 255);">스피드런</h1>
+<text style="color: white;">
+직업 선택에 광부가 추가됩니다<br>
+<h1 style="color: rgb(153, 0, 255);">맵</h1>
+<text style="color: white;">
+얼음집의 높이가 2칸 높아집니다<br>
+</text>
+</div></div><br>
+
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.3.1</h><text style="color:#888"> (2025-06-30)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">직업</h1>
+<text style="color: white;">
+<text style="color: burlywood;">[배터리]</text><br>
+[전기 충격] 스킬을 사용하면 현재 충전량의 10%가 감소합니다.<br>
+<br>
+<text style="font-size: 20px;">신규 직업<text style="color: burlywood;"> [뱀파이어]</text> 추가</text><button class="close"><a href="job-vampire.html">자세히 알아 보기</a></button>
+</text>
+</div></div><br>
+
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.3.0</h><text style="color:#888"> (2025-06-30)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">스피드런</h1><text style="color: white;">
+<text">새로운 컨텐츠인<text style="color: red;"><b> 스피드런</b></text> 이 추가됩니다</text><br>
+
+</text>
+</div></div><br>
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.2.4</h><text style="color:#888"> (2025-06-28)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">직업</h1><text style="color: white;"> 
+    <text style="color: burlywood;">[기생충]</text><br>
+    소환하는 몹의 이름이 기생충으로 변경 됩니다
+<h1 style="color: rgb(153, 0, 255);">기타</h1><text style="color: white;"> 
+<text>팀전이 다시 활성화가 되었습니다!</text><br>
+        <button class="toggle-sub-updates">▼ 서브 업데이트 보기</button>
+        <div class="sub-updates">
+        <h>V1.2.4.1</h><text style="color:#888"> (2025-06-29)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">기타</h1><text style="color: white;">
+        특별한 능력을 받는 방식이 변경되고 버그가 수정되었습니다<br>
+        건의함에서 계속 서바이벌로 변하던 버그 수정</text></div>
+</div></div><br>
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.2.3</h><text style="color:#888"> (2025-06-28)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">기타</h1><text style="color: white;">
+<text">빠른 액션(G키)에서 게임 시작 투표를 할 수 있는 항목 추가<br>
+관전자나 게임관여 안함 상태에서 게임 시작 투표를 할 시 "플레이어가 아니다" 라는 텍스트로 변경<br>
+산타가 특정 위치로 갈 시 버벅 거리던 버그 수정 </text>
+    <button class="toggle-sub-updates">▼ 서브 업데이트 보기</button>
+    <div class="sub-updates">
+        <h>V1.2.3.1</h><text style="color:#888"> (2025-06-26)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">기타</h1><text style="color: white;">
+        특별한 능력이 추가 되었습니다
+</text></div>
+</div></div><br>
+
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.2.2</h><text style="color:#888"> (2025-06-28)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">맵</h1><text style="color: white;">
+<text style="font-size: 20px;">신규 맵<text style="color: burlywood;"> [얼음 집]</text> 추가</text>
+<button class="close"><a href="map-ice.html">자세히 알아 보기</a></button>
+</text>
+</div></div><br>
+
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.2.1</h><text style="color:#888"> (2025-06-26)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">맵</h1><text style="color: white;">
+<text style="color: burlywood;">[오두막]</text><br>
+야외에서 지하로 내려가는 입구의 크기가 넓어짐<br>
+<text style="color: burlywood;">[The Maze of The Sun]</text><br>
+미로의 구조가 변경됨<br>
+<text style="color: burlywood;">[태양의 신전]</text><br>
+돌섬의 내부 입구가 넓어지게 변경<br>
+사막섬에 꼭대기부분의 방벽 삭제<br>
+<text style="color: burlywood;">[The 전장]</text><br>
+지상 사이드에 있는 건축물의 두께가 늘어남<br>
+지하의 가운데 지지대의 간격이 길어짐<br>
+</text>
+    <button class="toggle-sub-updates">▼ 서브 업데이트 보기</button>
+    <div class="sub-updates">
+        <h>V1.2.1.1</h><text style="color:#888"> (2025-06-26)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">직업</h1><text style="color: white;"></text>
+        <text style="color: burlywood;">[산타]</text><br>
+        재사용 쿨타임 10초 -> </text> <text style="color:red">15초<br></text>
+        마지막 선물을 뿌리기 시작 할 때 쿨타임이 줄어들던 버그 수정
+</text></div>
+
+
+
+</div></div><br>
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.2.0</h><text style="color:#888"> (2025-06-25)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">직업</h1><text style="color: white;">
+<text style="font-size: 20px;">신규 직업<text style="color: burlywood;"> [산타]</text> 추가</text>
+<button class="close"><a href="job-santa.html">자세히 알아 보기</a></button>
+        <h1 style="color: rgb(153, 0, 255);">기타</h1><text style="color: white;">
+        <text>속박이나 스턴 효과 상태임을 알려주는 텍스트 추가</text>
+</text>
+</div></div><br>
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.1.9</h><text style="color:#888"> (2025-06-21)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">기타</h1><text style="color: white;">
+<text>크레딧과 웹사이트 이동 목록이 게임 메뉴로 옮겨졌습니다</text><br>
+    <!-- ▼ 여기에 버튼 추가 -->
+    <button class="toggle-sub-updates">▼ 서브 업데이트 보기</button>
+    <!-- ▼ 여기에 서브 업데이트 내용 추가 -->
+    <div class="sub-updates">
+        <h>V1.1.9.1(3)</h><text style="color:#888"> (2025-06-21)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">기타</h1><text style="color: white;">
+        <text><br>G키를 누르면 유저 상태변경, 발광 시작 시간,제한 시간이 조절 가능합니다<br>게임 메뉴에서 기타 사항을 통해 건의함으로 이동 및 크레딧 보기가 가능합니다</text>
+
+        <br><br><h>V1.1.9.4</h><text style="color:#888"> (2025-06-23)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">직업</h1><text style="color: white;"></text>
+        <text style="color: burlywood;">[로봇]</text><br>
+        날라가는 위력 = 점프키를 누른시간 (0.8초~2초) X 0.1 -> </text> <text style="color:blue">(0.25초~1.5초) X 0.1<br></text>
+        <text>착지 할 때 높이에 따라 대미지(떨어지는 틱 * 0.1) -> </text> <text style="color:blue">(떨어지는틱 X 0.3)<br></text>
+
+        <text style="color: burlywood;">[즐예]</text><br>
+        <text style="color:red">그림을 그릴 때 나약함 1초를 받음<br></text>
+    
+                <br><br><h>V1.1.9.5</h><text style="color:#888"> (2025-06-23)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">기타</h1><text style="color: white;"></text>
+        <text>아이템이 버려지지 않게 변경됩니다</text><br>
+        
+                        <br><br><h>V1.1.9.6</h><text style="color:#888"> (2025-06-24)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">맵</h1><text style="color: white;"></text>
+        <text>모든 맵에서 높이 쌓아져있던 방벽이 사라지며 <br>
+이제 일반적으로 공격이 불가능한 위치에선 튕겨 나가게 변경됩니다</text><br>
+
+    <br></div>
+</div></div><br>
+
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.1.8</h><text style="color:#888"> (2025-06-20)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">직업</h1><text style="color: white;">
+<text style="color: burlywood;">[쿨쿨이]</text><br>
+능력이 리메이크 됩니다<br>
+스킬을 사용하면 이불과 자신이 날라가며 이불 근처에 있는 플레이어에게 속박을 줍니다
+<br>
+이후 플레이어와 상호작용을 하면 잠을 잘 수 있으며 5초뒤 좋은 꿈 또는 나쁜 꿈을 꿉니다
+<br>
+3초 안에 잠을 자지 않으면 피곤으로 인해 10초간의 구속3과 실명을 얻는다
+<button class="close"><a href="job-cool.html">자세히 알아 보기</a></button>
+        <h1 style="color: rgb(153, 0, 255);">기타</h1><text style="color: white;">
+        <text>직업 설명에 사이트로 가능 버튼 추가</text>
+</text>
+</div></div><br>
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.1.7</h><text style="color:#888"> (2025-05-22)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">직업</h1><text style="color: white;">
+<text style="color: burlywood;">[샌즈]</text><br>이동속도 0.06 -> <text style="color: rgb(0, 89, 255);">0.1</text>
+
+<h1 style="color: rgb(153, 0, 255);">기타</h1><text>
+킬전이 다시 활성화 됩니다<br>
+최다 우승자가 두명 이상인 상태에서 게임을 시작 할 시 최다 우승자끼리 보이던 버그 수정<br>
+-킬전<br>
+플레이어 목록이 사라지던 버그 수정<br>
+플레이어가 게임에 나가서 혼자 남게 되어도 게임이 끝이 나지 않던 버그 수정<br>
+-게임<br>
+게임중 나가고 게임이 끝난이후 접속 할 시 우승 판정이 나던 버그 수정<br>
+킬수가 제대로 안되던 버그 수정<br>
+최다 우승자가 두명 이상인 상태에서 게임을 시작 할 시 최다 우승자끼리 보이던 버그 수정</text>
+    
+    <button class="toggle-sub-updates">▼ 서브 업데이트 보기</button>
+    <div class="sub-updates">
+        <h>V1.1.7.1</h><text style="color:#888"> (2025-05-22)</text>
+        <h2></h2>
+        <h1 style="color: rgb(153, 0, 255);">기타</h1><text style="color: white;">
+        <text><br>맵 버전이 1.21.6으로 변경</text></div>
+</div></div><br>
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.1.6</h><text style="color:#888"> (2025-05-16)</text>
+<h2></h2>
+<h1 style="color: rgb(153, 0, 255);">직업</h1><text style="color: white;">
+<text style="color: burlywood;">[유튜버]</text><br>저격이후 떨어지는 구독자 수 20000 -> <text style="color: red;">10000</text>
+<br><text style="color: burlywood;">[정원사]</text><br>정원사의 씨앗을 던졌을 때 주변에 이팩트가 생기던 버그 수정
+<br><text style="color: burlywood;">[빙술사]</text><br>플레이어 위에 언제 얼어지는지 알려주는 게이지바 추가
+
+<h1 style="color: rgb(153, 0, 255);">사이트</h1><text>모든 직업에 영상이 업로드 되었습니다<text style="color: red;"><br>*기본 정보에 오류가 있습니다</text>
+ 
+<h1 style="color: rgb(153, 0, 255);">기타</h1><text>킬전모드가 활성화 되었습니다<br>게임관여안함,플레이어,관전자 중 뭣도 아닌 플레이어가 있지만 시작이 가능 하던 버그가 수정되었습니다
+</div></div><br>
+
+<div class="update-list">
+<div class="update-card">
+<h>V1.1.5</h>
+<h2></h2>
+<h1>기타<h1>
+<text>직업과 업데이트,맵에 대한 정보를 쉽게 볼 수 있는 사이트가 개설 되었습니다<br><text style="color:red">*일부 직업은 관련 영상이 아직 없으며 기본 정보에 오류가 있습니다</text><br>사이트는 로비에서 사이트 주소를 확인 할 수 있습니다<br>게임 중 접속을 할 시 게임이 종료 되는 것이 아닌 관전자로 바뀌게 변경 됩니다</text>
+</div></div><br>
+
+<script src="js/script.js"></script>
+</body>
+</html>
