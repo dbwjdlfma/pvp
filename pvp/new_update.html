@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>쓸모PVP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="videos/diamond.webp">
+    
+    <!-- Open Graph 메타태그 -->
+    <meta name="theme-color" content="#FF4500">
+    <meta property="og:title" content="쓸모PVP V1.4.11 업데이트">
+    <meta property="og:description" content="🗒️패치 내용🗒️
+맵 버전이 1.21.8로 오르며 
+광부,산타,샌즈,유튜버,판사,빙술사가 밸런스 조정됩니다
+
+[2025-07-29]">
+    
+    <meta property="og:image" content="https://kkukowiki.kr/images/7/7c/%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C%EA%B2%80.png">
+    <meta name="theme-color" content="#55FF55">
+
+    <script>
+    // 항상 랜덤 파라미터를 붙여 새로고침 (기존 파라미터 무시)
+    function addCacheBuster() {
+        const randomId = Math.floor(Math.random() * 1000000);
+        const baseUrl = window.location.origin + window.location.pathname;
+        window.location.href = baseUrl + '?v=' + randomId;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // 파라미터가 없거나, v= 파라미터가 없으면 새로고침
+        if (!window.location.search.includes('v=')) {
+            addCacheBuster();
+        } else {
+            window.location.href = 'https://dbwjdlfma.github.io/pvp/pvp/update.html';
+        }
+    });
+    
+    // 이동
+        document.addEventListener('DOMContentLoaded', function() {
+            if(!addCacheBuster()) {
+                window.location.href = 'https://dbwjdlfma.github.io/pvp/pvp/update.html';
+            }
+        });
+    </script>
+</head>
+<body>
+    <script src="js/script.js"></script>
+</body>
+</html>
