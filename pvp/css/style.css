@@ -1,0 +1,653 @@
+/* 전체 공통 스타일 */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+#soon_button {
+ background-color: #252525;
+ border:none;
+}
+
+
+
+
+/* 기존 이미지 스타일과의 일관성 유지 */
+.job-media {
+border-left: 3px solid #5d9cec; /* 직업 색상과 일치 */
+}
+
+.map-media {
+border-left: 3px solid #4CAF50; /* 맵 색상과 일치 */
+}
+
+
+body {
+font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+line-height: 1.6;
+color: #e0e0e0;
+background-color: #1a1a1a;
+}
+
+.wiki-container {
+max-width: 1200px;
+margin: 0 auto;
+background-color: #2d2d2d;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* 헤더 스타일 */
+.wiki-header {
+background-color: #1e1e1e;
+padding: 15px 20px;
+border-bottom: 2px solid #4a4a4a;
+position: relative;
+}
+
+.wiki-header h1 {
+color: #f0f0f0;
+font-size: 2.2em;
+font-weight: bold;
+text-align: center;
+margin: 0;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* 본문 영역 */
+.wiki-body {
+display: flex;
+min-height: 600px;
+}
+
+
+/* 사이드바 스타일 */
+.wiki-sidebar {
+width: 220px;
+padding: 20px 15px;
+background-color: #252525;
+border-right: 1px solid #3a3a3a;
+}
+
+#sidebar-section {
+margin-bottom: 25px;
+}
+
+#sidebar-section h3 {
+font-size: 1.1em;
+color: #5d9cec;
+margin-bottom: 12px;
+padding-bottom: 5px;
+border-bottom: 1px solid #3a3a3a;
+}
+
+#sidebar-section ul {
+list-style: none;
+}
+
+#sidebar-section li {
+margin: 8px 0;
+}
+
+#sidebar-section a {
+color: #e0e0e0;
+text-decoration: none;
+font-size: 0.95em;
+display: block;
+padding: 5px 8px;
+border-radius: 3px;
+transition: all 0.3s;
+}
+
+#sidebar-section a:hover {
+background-color: #333;
+color: #5d9cec;
+}
+
+/* 메인 콘텐츠 스타일 */
+.wiki-content {
+flex: 1;
+padding: 25px;
+}
+
+.wiki-content h2 {
+font-size: 1.8em;
+margin-bottom: 20px;
+color: #f0f0f0;
+border-bottom: 1px solid #4a4a4a;
+padding-bottom: 8px;
+}
+
+
+.wiki-content p {
+margin-bottom: 15px;
+font-size: 0.95em;
+}
+
+.quick-links {
+margin-top: 30px;
+background-color: #252525;
+padding: 20px;
+border-radius: 5px;
+border: 1px solid #3a3a3a;
+}
+
+.quick-links h3 {
+font-size: 1.5em;
+margin-bottom: 15px;
+color: #f0f0f0;
+}
+
+.quick-links a {
+color: #ffffff;
+text-decoration: none;
+font-size: 1.3em;
+line-height: 40px;
+}
+
+
+
+.quick-links a:hover {
+text-decoration: none;
+}
+
+
+
+/* 문서 스타일 */
+.wiki-article {
+line-height: 1.7;
+}
+
+.article-header {
+border-bottom: 1px solid #4a4a4a;
+padding-bottom: 10px;
+margin-bottom: 20px;
+}
+
+.article-header h1 {
+font-size: 2em;
+color: #f0f0f0;
+}
+
+.article-content p {
+margin-bottom: 15px;
+}
+
+/* 직업 목록 스타일 */
+.job-list {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 20px;
+margin-top: 30px;
+}
+
+.job-card {
+background-color: #252525;
+padding: 20px;
+border-radius: 5px;
+border: 1px solid #3a3a3a;
+transition: all 0.3s;
+}
+
+.job-card:hover {
+transform: translateY(-5px);
+border-color: #5d9cec;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.job-card h3 {
+color: #ffffff;
+margin-bottom: 10px;
+
+}
+
+.job-card h3 a {
+color: inherit;
+text-decoration: none;
+}
+
+.job-card p {
+font-size: 0.9em;
+color: #bbb;
+margin-bottom: 15px;
+}
+
+
+.job-role, .job-difficulty {
+display: inline-block;
+font-size: 0.8em;
+padding: 3px 8px;
+border-radius: 3px;
+margin-right: 5px;
+}
+.job-role {
+background-color: #1e3a5f;
+color: #5d9cec;
+}
+
+.job-difficulty {
+background-color: #2d2d2d;
+color: #e0e0e0;
+}
+
+/* 직업 상세 페이지 스타일 */
+.job-image {
+width: 100%;
+max-height: 300px;
+object-fit: cover;
+border-radius: 5px;
+margin-bottom: 20px;
+border: 1px solid #4a4a4a;
+}
+
+.job-info {
+margin-top: 20px;
+}
+
+.job-info h3 {
+color: #5d9cec;
+margin: 25px 0 15px;
+border-bottom: 1px solid #3a3a3a;
+padding-bottom: 5px;
+}
+
+.job-stats {
+list-style: none;
+background-color: #252525;
+padding: 15px;
+border-radius: 5px;
+margin-bottom: 20px;
+display:block;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 10px;
+}
+
+.job-stats li {
+margin: 5px 0;
+padding-left: 15px;
+position: relative;
+}
+
+.job-stats li:before {
+content: "▹";
+color: #5d9cec;
+position: absolute;
+left: 0;
+}
+
+/* 맵 목록 스타일 */
+.map-list {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+gap: 20px;
+margin-top: 30px;
+}
+
+.map-card {
+background-color: #252525;
+padding: 20px;
+border-radius: 5px;
+border: 1px solid #3a3a3a;
+transition: all 0.3s;
+position: relative;
+}
+
+.map-card:hover {
+transform: translateY(-5px);
+border-color: #5d9cec;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.map-card h3 {
+color: white;
+margin-bottom: 10px;
+}
+
+.map-card h3 a {
+color: inherit;
+text-decoration: none;
+}
+
+.map-card p {
+font-size: 0.9em;
+color: #bbb;
+margin-bottom: 15px;
+}
+
+.map-type, .map-size {
+display: inline-block;
+font-size: 0.8em;
+padding: 3px 8px;
+border-radius: 3px;
+margin-right: 5px;
+}
+
+.map-type {
+background-color: #1e3a5f;
+color: #5d9cec;
+}
+
+.map-size {
+background-color: #2d2d2d;
+color: #e0e0e0;
+}
+
+/* 맵 서브 업데이트 페이지 스타일 */
+.map-img-main {
+width: 500px;
+max-height: 300px;
+object-fit: cover;
+margin-bottom: 20px;
+border: 1px solid #4a4a4a;
+}
+
+
+.map-img2 {
+display: grid;
+grid-template-columns: 450px 450px;
+gap: 10px
+}
+
+.map-img-main2 {
+width: 450px;
+max-height: 300px;
+object-fit: cover;
+margin-bottom: 20px;
+border: 1px;
+}
+
+.update-list {
+display:block;
+}
+
+.update-card {
+background-color: #252525;
+padding: 20px;
+border-radius: 5px;
+border: 5px solid #3a3a3a;
+transition: all 0.3s;
+}
+
+.update-card h{
+color:aqua;
+font-size:30px;
+}
+.update-card h3{
+color:aqua;
+font-size:20px;
+}
+.update-card h1{
+color:purple;
+font-size:25px;
+line-height: 2;
+}
+.update-card text{
+color:white;
+font-size:15px;
+line-height: 1;
+}
+
+.update-card .close {
+  margin: 0px;
+  padding: 0px 6px;
+  background-color: #252525;
+  border-radius: 5px;
+  border: 2px solid #888;
+  font-size:10px;
+}
+
+.update-card .close a {
+  text-decoration: none;
+  color: white;
+}
+
+.update-card .close:hover{
+  border: 2px solid #1da2f0;
+  transition: all 0.2s;
+}
+
+/* 1. 버튼 스타일 (단순하게) */
+.toggle-sub-updates {
+  width: 100%; /* 한 줄 꽉 차게 */
+  padding: 10px;
+  background-color: #252525;
+  color: #e0e0e0;
+  border: 1px solid #888;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+  margin: 5px 0;
+  transition: all 0.2s;
+}
+
+
+/* 2. 서브 목록 스타일 (업데이트 카드와 동일) */
+.sub-updates {
+  padding: 10px 15px;
+  background-color: #252525;
+  border-left: 3px solid #9c5dce; /* 업데이트 카드의 보라색 */
+  margin: 5px 0 15px 0;
+  border-radius: 0 3px 3px 0;
+}
+
+/* 3. 목록이 펼쳐질 때 부드러운 애니메이션 */
+.sub-updates {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.sub-updates.active {
+  display: block;
+  opacity: 1;
+  max-height: 1000px; /* 충분한 공간 확보 */
+}
+
+
+.sub-updates h{
+color:aqua;
+font-size:30px;
+}
+.sub-updates h3{
+color:aqua;
+font-size:20px;
+}
+.sub-updates h1{
+color:purple;
+font-size:25px;
+line-height: 2;
+}
+.sub-updates text{
+color:white;
+font-size:15px;
+line-height: 1;
+}
+
+
+
+/* 검색 관련 스타일 */
+.search-container {
+margin: auto;
+
+text-align: center;
+max-width: 500px;
+}
+
+#jobSearch {
+padding: 10px 20px;
+width: 80%;
+border: 1px solid #4a4a4a;
+border-radius: 20px;
+background-color: #252525;
+color: #e0e0e0;
+font-size: 1em;
+outline: none;
+}
+
+/* 검색 버튼 스타일 */
+.search-button {
+  border: solid 1px #4a4a4a;
+  padding: 10px 20px;
+  background-color: #252525;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: all 0.3s;
+  white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+.search-button:active {
+  background-color: #3b7dd8;
+}
+
+/* 검색 컨테이너 가로 정렬 */
+.search-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#jobSearch {
+  flex: 1; /* 남은 공간 모두 차지 */
+}
+
+#jobSearch:focus {
+border-color: #5d9cec;
+}
+
+.highlight {
+animation: highlight 1.5s ease;
+border: 2px solid #ffffff !important;
+}
+
+@keyframes highlight {
+0% { transform: scale(1); }
+50% { transform: scale(1.05); }
+100% { transform: scale(1); }
+}
+
+#mobile-menu-toggle {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  background-color: #252525;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 1001;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  background-color: #1e1e1e;
+  border-right: 1px solid #333;
+  padding: 60px 15px 80px;
+  z-index: 1000;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.25s ease-out;
+}
+
+#mobile-sidebar.active {
+  transform: translateX(0);
+}
+
+.mobile-sidebar-section {
+  margin-bottom: 30px;
+}
+
+.mobile-sidebar-section h3 {
+  font-size: 1.1em;
+  color: #5d9cec;
+  margin-bottom: 12px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+#mobile-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#mobile-sidebar li {
+  margin: 10px 0;
+}
+
+#mobile-sidebar a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.95em;
+  display: block;
+  padding: 5px 8px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+#mobile-sidebar a:hover {
+  background-color: #333;
+  color: #5d9cec;
+}
+
+@media (min-width: 768px) {
+
+#mobile-menu-toggle {
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+}
+
+@media (max-width: 768px) {
+  .wiki-sidebar {
+    display: none;
+  }
+
+  #mobile-menu-toggle {
+    display: flex;
+}
+}
+
+@media (max-width: 549px) {
+  .wiki-header{
+    max-width: 100%;
+  }
+  .wiki-content
+  {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .job-card{
+    max-width: 100%;
+  }
+  iframe{
+    max-width: 100%;
+    max-height: 100%;
+  }
+.map-img2 {
+display: grid;
+grid-template-columns: 50% 50%;
+gap: 10px
+}
+.map-img-main {
+width: 100%;}
+.map-img-main2 {
+width: 100%;}
+}
