@@ -21,23 +21,26 @@
     <meta name="theme-color" content="#55FF55">
 
     <script>
-    
+    // addCacheBuster 함수 정의 (예시)
+    function addCacheBuster() {
+        // v 파라미터가 없으면 새로고침
+        if (!window.location.search.includes('v=')) {
+            var url = window.location.href;
+            var separator = url.includes('?') ? '&' : '?';
+            window.location.href = url + separator + 'v=' + Date.now();
+            return true;
+        }
+        return false;
+    }
 
     document.addEventListener('DOMContentLoaded', function() {
-        // 파라미터가 없거나, v= 파라미터가 없으면 새로고침
-        if (!window.location.search.includes('v=')) {
-            addCacheBuster();
-        } else {
+        // v= 파라미터가 있으면 링크 이동, 없으면 addCacheBuster 실행
+        if (window.location.search.includes('v=')) {
             window.location.href = 'https://dbwjdlfma.github.io/pvp/pvp/update.html';
+        } else {
+            addCacheBuster();
         }
     });
-    
-    // 이동
-        document.addEventListener('DOMContentLoaded', function() {
-            if(!addCacheBuster()) {
-                window.location.href = 'https://dbwjdlfma.github.io/pvp/pvp/update.html';
-            }
-        });
     </script>
 </head>
 <body>
