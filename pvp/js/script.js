@@ -73,7 +73,7 @@ function initCommonLayout() {
 function displayVersion() {
   const version = document.getElementById("version");
   if (version) {
-    version.textContent = "V1.6.1";
+    version.textContent = "V1.7.1";
     Object.assign(version.style, {
       fontSize: "0.9em",
       position: "absolute",
@@ -250,6 +250,7 @@ function init() {
 }
 
 // DOM 로드 후 초기화 실행
+
 document.addEventListener('DOMContentLoaded', init);
 
 // 마인크래프트 서버 상태 확인
