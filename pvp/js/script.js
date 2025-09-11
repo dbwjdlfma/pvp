@@ -22,6 +22,7 @@ function initCommonLayout() {
       <div class="wiki-container">
         <header class="wiki-header">
           <h1><a href="index.html" style="color: inherit; text-decoration: none;">쓸모PVP</a></h1>
+          <p><span id="server-status">확인 중...</span></p>
           <div id="version"></div>
         </header>
         <div class="wiki-body">
@@ -245,7 +246,38 @@ function init() {
   initSearch();
   initCountdown();
   initToggleButtons();
+  initServerStatus(); // 서버 상태 확인 함수 호출
 }
 
 // DOM 로드 후 초기화 실행
 document.addEventListener('DOMContentLoaded', init);
+
+// 마인크래프트 서버 상태 확인
+function initServerStatus() {
+  const serverAddress = 'usefulpvp.kro.kr';
+  const serverStatusElement = document.getElementById('server-status');
+  const serverAddressElement = document.getElementById('server-address');
+
+  if (serverAddressElement) {
+    serverAddressElement.textContent = serverAddress;
+  }
+
+  if (!serverStatusElement) return;
+
+  fetch(`https://api.mcstatus.io/v2/status/java/${serverAddress}`)
+    .then(response => response.json())
+    .then(data => {
+      if (data.online) {
+        serverStatusElement.innerHTML = `<span style="color: green;">●</span> 열림 (접속자: ${data.players.online} / ${data.players.max})`;
+        serverStatusElement.style.color = 'white';
+      } else {
+        serverStatusElement.innerHTML = `<span style="color: red;">●</span> 닫힘`;
+        serverStatusElement.style.color = 'white';
+      }
+    })
+    .catch(error => {
+      console.error('서버 상태를 가져오는 중 오류 발생:', error);
+      serverStatusElement.textContent = '상태를 확인할 수 없음';
+      serverStatusElement.style.color = 'gray';
+    });
+}
