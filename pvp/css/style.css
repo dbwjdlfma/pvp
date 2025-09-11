@@ -21,6 +21,9 @@ border-left: 3px solid #5d9cec; /* 직업 색상과 일치 */
 border-left: 3px solid #4CAF50; /* 맵 색상과 일치 */
 }
 
+html {
+  overflow-y: scroll; /* 창의 좌우 넓이가 미세하게 달라지는 현상 수정 */
+}
 
 body {
 font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
