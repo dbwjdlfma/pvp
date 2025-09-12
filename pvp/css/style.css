@@ -30,6 +30,12 @@ font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
 line-height: 1.6;
 color: #e0e0e0;
 background-color: #1a1a1a;
+opacity: 0; /* 초기에 콘텐츠 숨기기 */
+transition: opacity 0.2s ease-in; /* 부드럽게 나타나는 효과 */
+}
+
+body.loaded {
+  opacity: 1; /* 로드 완료 후 콘텐츠 보이기 */
 }
 
 .wiki-container {
@@ -159,18 +165,27 @@ text-decoration: none;
 
 /* 문서 스타일 */
 .wiki-article {
-line-height: 1.7;
+  line-height: 1.7;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.wiki-article.fade-out {
+  opacity: 0;
 }
 
 .article-header {
-border-bottom: 1px solid #4a4a4a;
-padding-bottom: 10px;
-margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .article-header h1 {
-font-size: 2em;
-color: #f0f0f0;
+  font-size: 2em;
+  color: #f0f0f0;
+  margin: 0; /* h1의 기본 마진 제거 */
 }
 
 .article-content p {
@@ -653,4 +668,65 @@ gap: 10px
 width: 100%;}
 .map-img-main2 {
 width: 100%;}
+}
+
+/* 플레이어 목록 스타일 */
+.player-list-container {
+  padding: 10px;
+}
+
+.player-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.player-card {
+  background-color: #252525;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.2s;
+}
+
+.player-card:hover {
+  background-color: #333;
+}
+
+.player-skin {
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+  border: 1px solid #4a4a4a;
+}
+
+.player-name {
+  color: #e0e0e0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.refresh-button {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s;
+}
+
+.refresh-button:hover {
+  background-color: #5d9cec;
+}
+
+.update-notice {
+  font-size: 0.8em;
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
 }
