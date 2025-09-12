@@ -136,10 +136,10 @@ function initMobileMenu() {
           <li><a href="update.html">업데이트 내역</a></li>
           <li><a href="jobs.html">직업</a></li>
           <li><a href="maps.html">맵</a></li>
-          <li><a href="player-list.html">플레이어 목록</a></li>
         </ul><br>
-        <h3>특별 모드</h3>
+        <h3>기타</h3>
         <ul>
+        <li><a href="player-list.html">플레이어 목록</a></li>
           <li><a href="0event_jobs.html">클래식</a></li>
         </ul>
       </div>
@@ -171,10 +171,10 @@ function initSidebar() {
         <li><a href="update.html">업데이트 내역</a></li>
         <li><a href="jobs.html">직업</a></li>
         <li><a href="maps.html">맵</a></li>
-        <li><a href="player-list.html">플레이어 목록</a></li>
       </ul><br>
-      <h3>특별 모드</h3>
+      <h3>기타</h3>
       <ul>
+      <li><a href="player-list.html">플레이어 목록</a></li>
         <li><a href="0event_jobs.html">클래식</a></li>
       </ul>`;
   }
