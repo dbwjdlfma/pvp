@@ -11,13 +11,27 @@
 </head>
 <body>
     <div class="article-header">
-        <h1>플레이어 목록</h1>
-        <button id="refresh-player-list" class="refresh-button">새로고침</button>
+        <h1>건의 하기</h1>
     </div>
-    <div id="player-list-container" class="player-list-container">
-        <p>플레이어 목록을 불러오는 중입니다...</p>
-    </div>
-    <p class="update-notice">서버 반영까지 최대 1분 정도 소요될 수 있습니다.</p>
+    
+<div class="quick-links">
+<form
+  action="https://formspree.io/f/xpwjnpjr"
+  method="POST">
+  <label>
+       <label>닉네임</label><br>
+       <p></p>
+    <input type="text" name="닉네임" class="suggest_name"><br>
+    <label>건의 내용</label><p></p>
+    <textarea name="건의 사항" class="suggest"></textarea>
+  </label>
+  <!-- your other form fields go here --><p></p>
+  <button type="submit" class="suggest_send">보내기</button>
+</form>
+
 <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
