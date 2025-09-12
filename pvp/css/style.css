@@ -706,7 +706,7 @@ width: 100%;}
 
 /* 플레이어 목록 스타일 */
 .player-list-container {
-  padding: 10px;
+  padding: 1px;
 }
 
 .player-list {
@@ -762,6 +762,7 @@ width: 100%;}
 .update-notice {
   font-size: 0.8em;
   color: #888;;
+  padding: 1px;
 }
 
 
