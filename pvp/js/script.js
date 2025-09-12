@@ -50,6 +50,11 @@ function handleNavigation(event) {
 
   // a 태그가 아니거나, 외부 링크거나, 새 탭에서 여는 링크는 무시
   if (!anchor || anchor.target === '_blank' || anchor.protocol !== location.protocol || anchor.host !== location.host) {
+    // 만약 모바일 사이드바의 외부 링크를 클릭했다면 사이드바를 닫아줍니다.
+    const sidebar = document.getElementById('mobile-sidebar');
+    if (sidebar && sidebar.contains(anchor)) {
+      sidebar.classList.remove('active');
+    }
     return;
   }
 
@@ -59,7 +64,18 @@ function handleNavigation(event) {
 
   // 현재 URL과 같은 경우 이동하지 않음
   if (url === window.location.href) {
+    // 그래도 모바일 사이드바는 닫아줍니다.
+    const sidebar = document.getElementById('mobile-sidebar');
+    if (sidebar && sidebar.classList.contains('active')) {
+        sidebar.classList.remove('active');
+    }
     return;
+  }
+
+  // 모바일 사이드바 닫기
+  const sidebar = document.getElementById('mobile-sidebar');
+  if (sidebar && sidebar.classList.contains('active')) {
+    sidebar.classList.remove('active');
   }
 
   loadPage(url);
@@ -142,6 +158,7 @@ function initMobileMenu() {
         <li><a href="player-list.html">플레이어 목록</a></li>
         <li><a href="suggest.html">건의하기</a></li>
           <li><a href="0event_jobs.html">클래식</a></li>
+          <li><a href="http://usefulpvp.kro.kr:8804/" target="_blank" style="color: gray; display: flex; justify-content: space-between; align-items: center;">자세한 통계 보기 <span class="material-symbols-outlined">open_in_new</span></a></li>
         </ul>
       </div>
     </nav>`;
@@ -150,12 +167,21 @@ function initMobileMenu() {
   const sidebar = document.getElementById('mobile-sidebar');
 
   if (toggleBtn && sidebar) {
-    toggleBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
+    toggleBtn.addEventListener('click', () => {
       sidebar.classList.toggle('active');
     });
     document.addEventListener('click', (e) => {
-      if (!sidebar.contains(e.target) && !toggleBtn.contains(e.target)) {
+      // e.target이 사이드바 내부에 있거나, 메뉴 토글 버튼 자체이면 닫지 않음
+      if (sidebar.contains(e.target) || toggleBtn.contains(e.target)) {
+        return;
+      }
+      // 그 외의 경우(외부 클릭) 사이드바를 닫음
+      sidebar.classList.remove('active');
+    });
+
+    // 창 크기 조절 시 데스크톱 뷰로 전환되면 모바일 사이드바 닫기
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) {
         sidebar.classList.remove('active');
       }
     });
@@ -178,6 +204,7 @@ function initSidebar() {
       <li><a href="player-list.html">플레이어 목록</a></li>
       <li><a href="suggest.html">건의하기</a></li>
         <li><a href="0event_jobs.html">클래식 모드</a></li>
+        <li><a href="http://usefulpvp.kro.kr:8804/" target="_blank" style="color: gray; display: flex; justify-content: space-between; align-items: center;">자세한 통계 보기 <span class="material-symbols-outlined">open_in_new</span></a></li>
       </ul>`;
   }
 }
@@ -337,6 +364,12 @@ function initializePageScripts() {
 document.addEventListener('DOMContentLoaded', () => {
   // 0. body가 로드 완료되면 보이도록 처리
   document.body.classList.add('loaded');
+
+  // 0.5. Material Symbols 폰트 동적 로드
+  const fontLink = document.createElement('link');
+  fontLink.rel = 'stylesheet';
+  fontLink.href = 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new';
+  document.head.appendChild(fontLink);
 
   // 1. 공통 레이아웃 생성 (최초 한 번만 실행)
   initCommonLayout();
