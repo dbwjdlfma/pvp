@@ -29,6 +29,9 @@ async function loadPage(url, pushState = true) {
     // 3. 새 콘텐츠를 부드럽게 나타나게 함
     article.classList.remove('fade-out');
 
+    // 4. 페이지 맨 위로 스크롤
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
     // URL 주소 변경 (뒤로가기/앞으로가기 시에는 제외)
     if (pushState) {
       history.pushState({ path: url }, newTitle, url);
