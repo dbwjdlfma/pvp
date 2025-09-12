@@ -48,9 +48,13 @@ box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 /* 헤더 스타일 */
 .wiki-header {
 background-color: #1e1e1e;
-padding: 15px 20px;
+padding: 26px 20px;
 border-bottom: 2px solid #4a4a4a;
 position: relative;
+display: flex;
+flex-direction: column;
+justify-content: center;
+min-height: 80px;
 }
 
 .wiki-header h1 {
@@ -60,6 +64,15 @@ font-weight: bold;
 text-align: center;
 margin: 0;
 text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+line-height: 1.2;
+}
+
+.wiki-header p {
+position: absolute;
+bottom: 12px;
+left: 20px;
+margin: 0;
+font-size: 0.9em;
 }
 
 
