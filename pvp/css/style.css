@@ -389,16 +389,21 @@ border: 1px solid #4a4a4a;
 
 .map-img2 {
 display: grid;
-grid-template-columns: 450px 450px;
-gap: 10px
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+width: 100%;
+max-width: 100%;
+box-sizing: border-box;
 }
 
 .map-img-main2 {
-width: 450px;
+width: 100%;
+max-width: 100%;
 max-height: 300px;
 object-fit: cover;
 margin-bottom: 20px;
-border: 1px;
+border: 1px solid #4a4a4a;
+box-sizing: border-box;
 }
 
 .update-list {
@@ -695,13 +700,22 @@ border: 2px solid #ffffff !important;
   }
 .map-img2 {
 display: grid;
-grid-template-columns: 50% 50%;
-gap: 10px
+grid-template-columns: 1fr 1fr;
+gap: 8px;
+width: 100%;
+max-width: 100%;
+padding: 0 10px;
+box-sizing: border-box;
 }
 .map-img-main {
 width: 100%;}
 .map-img-main2 {
-width: 100%;}
+width: 100%;
+max-width: 100%;
+height: auto;
+object-fit: cover;
+box-sizing: border-box;
+}
 }
 
 /* 플레이어 목록 스타일 */
