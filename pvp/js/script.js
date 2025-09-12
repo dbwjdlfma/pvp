@@ -352,12 +352,68 @@ function initPlayerList() {
 // 메인 초기화 함수
 // =================================================================================
 
+// 뒤로가기 버튼 초기화
+function initBackButton() {
+  const article = document.querySelector('.wiki-article');
+  if (!article) return;
+
+  const currentPath = window.location.pathname;
+  const fileName = currentPath.split('/').pop();
+  
+  // job-xxx.html 또는 map-xxx.html 패턴 확인 (0event_jobs.html은 제외)
+  const isJobDetail = fileName.startsWith('job-') && fileName.endsWith('.html');
+  const isMapDetail = fileName.startsWith('map-') && fileName.endsWith('.html');
+  const isEventDetail = fileName.startsWith('0event_') && fileName.endsWith('.html') && fileName !== '0event_jobs.html';
+  
+  if (isJobDetail || isMapDetail || isEventDetail) {
+    // 기존 article-header 찾기
+    const existingHeader = article.querySelector('.article-header');
+    if (existingHeader) {
+      // 기존 헤더가 있으면 새로운 헤더로 교체
+      const newHeader = document.createElement('div');
+      newHeader.className = 'article-header-with-back';
+      
+      // 뒤로가기 버튼 생성
+      const backButton = document.createElement('a');
+      backButton.className = 'back-button';
+      
+      const backIcon = document.createElement('span');
+      backIcon.className = 'material-symbols-outlined';
+      backIcon.textContent = 'arrow_back';
+      backButton.appendChild(backIcon);
+      
+      if (isJobDetail) {
+        backButton.href = 'jobs.html';
+        backButton.title = '직업 목록으로 돌아가기';
+      } else if (isMapDetail) {
+        backButton.href = 'maps.html';
+        backButton.title = '맵 목록으로 돌아가기';
+      } else if (isEventDetail) {
+        backButton.href = '0event_jobs.html';
+        backButton.title = '클래식 목록으로 돌아가기';
+      }
+      
+      // 기존 제목 복사
+      const existingTitle = existingHeader.querySelector('h1');
+      const newTitle = existingTitle ? existingTitle.cloneNode(true) : document.createElement('h1');
+      
+      // 새 헤더에 버튼과 제목 추가
+      newHeader.appendChild(backButton);
+      newHeader.appendChild(newTitle);
+      
+      // 기존 헤더를 새 헤더로 교체
+      existingHeader.parentNode.replaceChild(newHeader, existingHeader);
+    }
+  }
+}
+
 // 페이지 콘텐츠가 바뀔 때마다 실행되어야 할 스크립트 모음
 function initializePageScripts() {
   initSearch();
   initCountdown();
   initToggleButtons();
   initPlayerList();
+  initBackButton(); // 뒤로가기 버튼 초기화 추가
 }
 
 // 최초 페이지 로드 시 실행
@@ -368,7 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 0.5. Material Symbols 폰트 동적 로드
   const fontLink = document.createElement('link');
   fontLink.rel = 'stylesheet';
-  fontLink.href = 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new';
+  fontLink.href = 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200';
   document.head.appendChild(fontLink);
 
   // 1. 공통 레이아웃 생성 (최초 한 번만 실행)
