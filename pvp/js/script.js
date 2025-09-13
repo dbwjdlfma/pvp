@@ -160,7 +160,8 @@ function initMobileMenu() {
         <ul>
           <li><a href="update.html">업데이트 내역</a></li>
           <li><a href="jobs.html">직업</a></li>
-          <li><a href="maps.html">맵</a></li>
+          <li><a href="maps.html">데스매치 맵</a></li>
+          <li><a href="mapdomin.html">점령전 맵</a></li>
         </ul><br>
         <h3>기타</h3>
         <ul>
@@ -207,7 +208,8 @@ function initSidebar() {
       <ul>
         <li><a href="update.html">업데이트 내역</a></li>
         <li><a href="jobs.html">직업</a></li>
-        <li><a href="maps.html">맵</a></li>
+        <li><a href="maps.html">데스매치 맵</a></li>
+        <li><a href="mapdomin.html">점령전 맵</a></li>
       </ul><br>
       <h3>기타</h3>
       <ul>
