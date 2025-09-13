@@ -204,7 +204,7 @@ function initSidebar() {
   const sidebar = document.getElementById('sidebar-section');
   if (sidebar) {
     sidebar.innerHTML = `
-      <h3>게임 정보</h3>
+      <h3>게임 정보</h3> 
       <ul>
         <li><a href="update.html">업데이트 내역</a></li>
         <li><a href="jobs.html">직업</a></li>
