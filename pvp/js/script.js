@@ -138,8 +138,14 @@ function displayVersion() {
   }
 }
 
+
+
+
+
 // 모바일 메뉴
 function initMobileMenu() {
+
+
   const mb = document.getElementById('mb');
   if (!mb) return;
 
@@ -189,6 +195,7 @@ function initMobileMenu() {
       }
     });
   }
+  
 }
 
 // 데스크탑 사이드바
@@ -258,29 +265,7 @@ function initSearch() {
   document.getElementById("searchButton")?.addEventListener("click", performSearch);
 }
 
-// 카운트다운 (jobs.html)
-function initCountdown() {
-  const messageElement = document.getElementById('soon');
-  if (!messageElement) return;
 
-  const targetDate = new Date('2025-12-24T00:00:00');
-  const lateDate = new Date('2026-01-24T00:00:00');
-
-  const intervalId = setInterval(() => {
-    const now = new Date();
-    if (now < targetDate) {
-      const diff = targetDate - now;
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-      messageElement.innerHTML = `<div class="job-card"><h3>곧 공개됩니다!</h3><span class="job-role">남은 시간 : ${days}일 ${hours}시간 ${minutes}분 ${seconds}초</span></div>`;
-    } else if (now > lateDate) {
-      messageElement.innerHTML = ``;
-      clearInterval(intervalId);
-    }
-  }, 1000);
-}
 
 // 토글 버튼 (update.html)
 function initToggleButtons() {
