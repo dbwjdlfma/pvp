@@ -131,7 +131,7 @@ function initCommonLayout() {
 function displayVersion() {
   const version = document.getElementById("version");
   if (version) {
-    version.textContent = "V1.7.1";
+    version.textContent = "V1.7.2";
     Object.assign(version.style, {
       fontSize: "0.9em", position: "absolute", right: "20px", bottom: "5px", color: "#888"
     });
