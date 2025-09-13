@@ -400,7 +400,6 @@ function initBackButton() {
 // 페이지 콘텐츠가 바뀔 때마다 실행되어야 할 스크립트 모음
 function initializePageScripts() {
   initSearch();
-  initCountdown();
   initToggleButtons();
   initPlayerList();
   initBackButton(); // 뒤로가기 버튼 초기화 추가
