@@ -353,9 +353,10 @@ function initBackButton() {
   // job-xxx.html 또는 map-xxx.html 패턴 확인 (0event_jobs.html은 제외)
   const isJobDetail = fileName.startsWith('job-') && fileName.endsWith('.html');
   const isMapDetail = fileName.startsWith('map-') && fileName.endsWith('.html');
+  const isMapdominDetail = fileName.startsWith('mapdomin-') && fileName.endsWith('.html');
   const isEventDetail = fileName.startsWith('0event_') && fileName.endsWith('.html') && fileName !== '0event_jobs.html';
   
-  if (isJobDetail || isMapDetail || isEventDetail) {
+  if (isJobDetail || isMapDetail || isEventDetail || isMapdominDetail) {
     // 기존 article-header 찾기
     const existingHeader = article.querySelector('.article-header');
     if (existingHeader) {
@@ -378,9 +379,12 @@ function initBackButton() {
       } else if (isMapDetail) {
         backButton.href = 'maps.html';
         backButton.title = '맵 목록으로 돌아가기';
+      } else if (isMapdominDetail) {
+        backButton.href = 'mapdomin.html';
+        backButton.title = '점령전 맵 목록으로 돌아가기';
       } else if (isEventDetail) {
         backButton.href = '0event_jobs.html';
-        backButton.title = '클래식 목록으로 돌아가기';
+        backButton.title = '클래식 직업 목록으로 돌아가기';
       }
       
       // 기존 제목 복사
