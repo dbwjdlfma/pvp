@@ -156,6 +156,9 @@ function initMobileMenu() {
     </button>
     <nav id="mobile-sidebar" class="mobile-sidebar">
       <div class="mobile-sidebar-section">
+        <div style="margin-bottom: 20px;">
+          <a href="index.html"><span class="material-symbols-outlined">home</span> 홈</a>
+        </div>
         <h3>게임 정보</h3>
         <ul>
           <li><a href="update.html">업데이트 내역</a></li>
@@ -204,6 +207,9 @@ function initSidebar() {
   const sidebar = document.getElementById('sidebar-section');
   if (sidebar) {
     sidebar.innerHTML = `
+      <div style="margin-bottom: 20px;">
+        <a href="index.html"><span class="material-symbols-outlined">home</span> 홈</a>
+      </div>
       <h3>게임 정보</h3> 
       <ul>
         <li><a href="update.html">업데이트 내역</a></li>

@@ -126,10 +126,34 @@ margin: 8px 0;
 color: #e0e0e0;
 text-decoration: none;
 font-size: 0.95em;
-display: block;
+display: flex;
+align-items: center;
+gap: 8px;
 padding: 5px 8px;
 border-radius: 3px;
 transition: all 0.3s;
+}
+
+#sidebar-section a .material-symbols-outlined {
+font-size: 1.1em;
+}
+
+/* 홈 링크도 동일한 스타일 적용 */
+#sidebar-section > div > a {
+color: #e0e0e0;
+text-decoration: none;
+font-size: 0.95em;
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 5px 8px;
+border-radius: 3px;
+transition: all 0.3s;
+}
+
+#sidebar-section > div > a:hover {
+background-color: #333;
+color: #5d9cec;
 }
 
 #sidebar-section a:hover {
@@ -663,10 +687,34 @@ border: 2px solid #ffffff !important;
   color: #e0e0e0;
   text-decoration: none;
   font-size: 0.95em;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   padding: 5px 8px;
   border-radius: 3px;
   transition: all 0.3s;
+}
+
+#mobile-sidebar a .material-symbols-outlined {
+  font-size: 1.1em;
+}
+
+/* 모바일 홈 링크도 동일한 스타일 적용 */
+#mobile-sidebar .mobile-sidebar-section > div > a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 0.95em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+#mobile-sidebar .mobile-sidebar-section > div > a:hover {
+  background-color: #333;
+  color: #5d9cec;
 }
 
 #mobile-sidebar a:hover {
