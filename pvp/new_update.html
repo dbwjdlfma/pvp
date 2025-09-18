@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>쓸모PVP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="videos/diamond.webp">
+    
+    <!-- Open Graph 메타태그 -->
+    <meta name="theme-color" content="#FF4500">
+    <meta property="og:title" content="쓸모PVP V1.7.2.1 업데이트">
+    <meta property="og:description" content="🗒️패치 내용🗒️
+로봇의 알려진 문제에 대한 긴급 패치
+
+[2025-09-17]">
+    
+    <meta property="og:image" content="https://kkukowiki.kr/images/7/7c/%EB%8B%A4%EC%9D%B4%EC%95%84%EB%AA%AC%EB%93%9C%EA%B2%80.png">
+    <meta name="theme-color" content="#55FF55">
+
+    <script>
+    // addCacheBuster 함수 정의 (예시)
+    function addCacheBuster() {
+        // v 파라미터가 없으면 새로고침
+        if (!window.location.search.includes('v=')) {
+            var url = window.location.href;
+            var separator = url.includes('?') ? '&' : '?';
+            window.location.href = url + separator + 'v=' + Date.now();
+            return true;
+        }
+        return false;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // v= 파라미터가 있으면 링크 이동, 없으면 addCacheBuster 실행
+        if (window.location.search.includes('v=')) {
+            window.location.href = 'https://dbwjdlfma.github.io/pvp/pvp/update.html';
+        } else {
+            addCacheBuster();
+        }
+    });
+    </script>
+</head>
+<body>
+    <script src="js/script.js"></script>
+</body>
+</html>
