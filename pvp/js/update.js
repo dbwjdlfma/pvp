@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 연막 지속시간 4초 -> <span class="nurf">2초</span><br>
                 연막이 안생기던 버그 수정<br>
             </span></div>
-                <div class="update_container">
                 <div class="update_sub_container">
                 <span class="update_jobname">[광부]</span><br>
                 <span class="update_content">
