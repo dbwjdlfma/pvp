@@ -1,0 +1,197 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+a:link{
+    color:rgb(0, 153, 255);
+    text-decoration: none;
+}
+a:visited{
+    color:rgb(0, 153, 255);
+    text-decoration: none;
+}
+
+body {
+font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+line-height: 1.6;
+color: #E0E0E0;
+background-color: rgb(14, 14, 14);
+padding: 20px
+}
+
+/* 상단에 로고와 트리플바 */
+.header {
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* 사이드바 */
+#sidebar_button{
+background:rgb(0,0,0,0);
+border: none;
+color: white;
+font-size:1.8em;
+cursor: pointer;
+margin-right: 0.5em;
+}
+
+.sidebar_item:hover {
+    background-color: black;
+transition: 0.3s ease;
+padding:5px;
+border-radius: 5px;
+display: block;
+width: 130px;
+}
+
+.sidebar_content {
+    background: black;
+    width: 200px;
+    height: 300px;
+   border: 1px solid  rgb(100, 100, 100);
+   border-radius: 10px;
+   padding:15px;   
+   position:absolute;
+    top: 100%; 
+    left:0;
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  z-index:20;
+}
+
+.sidebar_content.show{
+ opacity: 1; /* 불투명하게 만듦 */
+    visibility: visible; /* 화면에 보이게 함 */
+    transform: translateX(0); /* 제자리로 이동 */
+}
+
+
+.sidebar_content > hr{
+    border-color: rgb(0, 0, 0);
+    width:auto;
+    margin-bottom: 10%;
+}
+
+.sidebar_content > a{
+    display: block;
+    font-size:1em;
+    padding: 0px
+}
+
+
+.sidebar_cat{
+    font-size: 1.3em;
+}
+
+.header > a{
+    text-decoration: none;
+    color:white;
+    font-size:2em;
+    cursor: pointer;
+}
+
+
+
+
+/* 기본 컨테이너 */
+.main_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* 광고 같은거 */
+.info_box {
+    font-size:0.8em;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* 업데이트 막스 */
+.index_content_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px
+}
+
+.index_content{
+    border-radius: 10px;
+    border: 1px solid rgb(100, 100, 100);
+    text-align: left;
+    padding: 30px;
+}
+/* 글자크기 */
+.index_content a{
+    text-decoration: none;;
+}
+
+.index_content p{
+    font-size: 1.0em;
+}
+.index_content span{
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0);
+}
+/* 박스별 배치 */
+.section_update{
+    grid-row: 1 / 3; 
+}
+
+.section_suggest{
+            grid-column: 2;
+            grid-row: 1;
+}
+
+.section_server{
+            grid-column: 2;
+            grid-row: 2;
+}
+
+.section_dev{
+ grid-column:  1/3;
+}
+
+
+/* 페이지 이름 */
+.page_title{
+    margin-bottom: 15px;
+    text-align: left;
+}
+.page_title hr{
+    margin-bottom: 25px;
+    border-color: gray;
+}
+
+
+.page_title a{
+    display: inline-block;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid white;
+    width: 40px; 
+    height: 40px;
+    font-size: 1.5em;
+    text-align: center;
+    align-items: center;
+    color: black;
+
+}
+
+.page_list{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0.05fr 1fr;
+}
+
+
+
+
+
+

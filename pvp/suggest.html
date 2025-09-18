@@ -1,37 +1,32 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="kor">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <title>쓸모PVP - 접속자 목록</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="videos/diamond.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쓸모PVP</title>
+    <link rel="stylesheet" href="css/css.css"> <link rel="stylesheet" href="css/suggest.css">
+    <link rel="icon" href="image/logo.webp">
 </head>
 <body>
-    <div class="article-header">
-        <h1>건의 하기</h1>
-    </div>
-    
-<div class="quick-links">
-<form
-  action="https://formspree.io/f/xpwjnpjr"
-  method="POST">
-  <label>
-       <label>닉네임</label><br>
-       <p></p>
-    <input type="text" name="닉네임" class="suggest_name"><br>
-    <label>건의 내용</label><p></p>
-    <textarea name="건의 사항" class="suggest"></textarea>
-  </label>
-  <!-- your other form fields go here --><p></p>
-  <button type="submit" class="suggest_send">보내기</button>
-</form>
+    <div id="main_container" class="main_container">
 
-<script src="js/script.js"></script>
+        <div class="page_title">
+            <h1>건의 하기</h1>
+        </div>
+<div class="index_content section_update">
+<form  action="https://formspree.io/f/xpwjnpjr"  method="POST" target="_blank">
+  <label>
+         <label style="font-size:20px">닉네임</label><br><p></p>
+    <input type="text" name="닉네임" class="suggest_name"><br>
+          <label style="font-size:20px">건의 내용</label><p></p>
+    <textarea name="건의 사항" class="suggest"></textarea>
+  </label><p></p>
+      <button type="submit" class="suggest_send">보내기</button>
+</form>
+</div>
+
+
+    </div>
+    <script src="js/js.js"></script> <script src="js/update.js"></script> 
 </body>
 </html>
-
-
-

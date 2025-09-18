@@ -1,0 +1,143 @@
+
+/* 업데이트 */
+.update_box{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    position:relative;
+}
+/* 버전박스 간격 */
+.version-select{
+    margin: 15px;
+    
+}
+
+/* 버전 숫자 '슬롯' */
+.version-slot {
+    font-size:1.4em;
+    border: 1px solid white;
+    cursor: pointer;
+    padding: 5px 50px;
+    border-radius: 5px;
+    
+    transition: background-color 0.2s;
+}
+.version-slot:hover {
+    background-color: #333;
+}
+
+/* 버전 텍스트 슬롯 */
+.version-slot {
+    
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* 버전 선택 드롭다운 메뉴 */
+.version-dropdown {
+    width:15em;
+    background-color: #1e1e1e;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+    left:50%;
+    position:absolute;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: -15px;
+    transform: translate(-50%, -10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+   
+
+/* JavaScript로 show 클래스가 붙으면 드롭다운을 보여줌 */
+.version-dropdown.show {
+        opacity: 1;
+        visibility: visible;
+    transform: translate(-50%, 10px);
+}
+
+
+/* 드롭다운 안의 각 버전 아이템 */
+.version-dropdown-item {
+    
+    font-size:1.4em;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.version-dropdown-item:hover {
+    
+    background-color: #333;
+}
+
+/* 패치노트 스타일 */
+.patch_note {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: #1c1c1c;
+}
+/* 패치 노트 */
+.patch_note >p {
+    color:aqua;
+    font-size: 2.4em;
+}
+.update_date {
+    color:gray;
+    font-size: 0.5em;
+}
+.patch_note > hr {
+    border-color: gray;
+}
+/* 패치내용 */
+.update_cat {
+    margin: 15px 0px;
+    font-size: 1.6em;
+}
+.update_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:15px;
+}
+
+.nojob {
+    display: block;
+}
+
+.update_sub_container {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15px;;
+}
+.update_jobname{
+    color:rgb(255, 230, 0);
+    font-size: 1.3em;
+}
+.buff{
+    color:deepskyblue;
+}
+
+.nurf{
+    color:red;
+}
+
+
+@media screen and (max-width: 1980px) {
+
+        .update_container {
+        grid-template-columns: 1fr 1fr; 
+        }
+}
+
+@media screen and (max-width: 1060px) {
+
+    .update_container {
+        grid-template-columns: 1fr; 
+    }
+}
+

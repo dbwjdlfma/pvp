@@ -1,0 +1,178 @@
+
+/* 직업,맵 리시트 */
+.list{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.list_box{
+    padding: 15px;
+    text-align: left;
+    font-size:1.2em;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.list_tag{
+ display: grid;
+ grid-template-rows:1fr 1fr;
+}
+
+.tag{
+    border: 1px solid rgb(100, 100, 100);
+    width:auto;
+    border-radius: 10px;
+    max-width:auto;
+    font-size:0.8em;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 3px 10px
+}
+.tag > p{
+    align-items: center;
+}
+.tag > img {
+    vertical-align: middle;
+}
+
+.diff{
+    width: 15px;
+    height: 15px;
+
+}
+
+
+/* 직업및맵 리스트 */
+.list_content{
+    display: grid;
+    grid-gap : 15px
+}
+.list_content > .content_des{
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 10px;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.content_des > h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.content_des > p {
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:  7px;
+    font-size: 1em;
+}
+.content_des .stat {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:  7px;
+    font-size: 1em;
+}
+.content_des .skill {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding:  7px;
+    font-size: 1em;
+}
+
+.job_video{
+    width:25em;
+    height:14.5em;
+    border: 1px solid rgb(100, 100, 100);
+        border-radius: 10px;
+
+}
+
+
+/* 직업,맵 리스트 */
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.list_box {
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2em;
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 10px;
+    height: 100%;
+}
+
+/* 제목과 검색창을 감싸는 컨테이너 */
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+#job-search-input {
+    width: 400px;
+    padding: 8px 12px;
+    font-size: 1em;
+    color: white;
+    background-color: #222;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+#job-search-input:focus {
+    outline: none;
+    border-color: white;
+}
+
+.title-container .placeholder {
+    width: 118px; /* h1 너비와 비슷하게 설정하여 검색창을 중앙에 배치 */
+}
+
+
+
+.list_tag_map{
+    display: grid;
+     grid-template-columns:1fr 1fr;
+     gap:10px
+}
+
+@media screen and (min-width: 1200px) {
+    .list {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+    }
+        .list_content {
+        grid-template-columns: 2fr 1fr; 
+        }
+            #job-search-input {
+            width: 600px;}
+}
+@media screen and (max-width: 1060px) {
+    .list {
+        grid-template-columns: 1fr 1fr; 
+    }
+    .list_content {
+        grid-template-columns: 1fr; 
+    }
+    .job_video{
+        grid-row-start: 1;
+    }
+    #job-search-input {
+            width: 400px;}
+}
+
+@media screen and (max-width: 750px) {
+    .list {
+        grid-template-columns: 1fr; 
+    }
+        #job-search-input {
+            width: 180px;}
+}
