@@ -5,87 +5,88 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
-        "V1.7.3": `<p>V1.7.3<span class="update_date">(2025-09-18)</span></p>
+            "V1.8.0": `<p>V1.8.0<span class="update_date">(2025-09-21)</span></p>
         <hr>
          <h5 class="update_cat">직업</h5>
-                <div class="update_container">
-                <div class="update_sub_container">
-                <span class="update_jobname">[유튜버]</span><br>
-                <span class="update_content">
-                공개 저격 시 즉시 정신적고통을 받게 변경
-            </span></div>
-               <div class="update_sub_container">
-                <span class="update_jobname">[투척수]</span><br>
-                <span class="update_content">
-                연막 지속시간 4초 -> <span class="nurf">2초</span><br>
-                연막이 안생기던 버그 수정<br>
-            </span></div>
-                <div class="update_sub_container">
-                <span class="update_jobname">[광부]</span><br>
-                <span class="update_content">
-                땅에서 올라올 떄 5m 이내에 대미지를 줌 <span class="nurf">2m</span>
-            </span></div>
-               <div class="update_sub_container">
-                <span class="update_jobname">[판사]</span><br>
-                <span class="update_content">
-                살인이 일어났을 때의 판결 확률 비율 65:55 -> <span class="nurf">55:45</span>
-            </span></div>
+            <div class="update_container">
             <div class="update_sub_container">
-                <span class="update_jobname">[빙술사]</span><br>
-                <span class="update_content">
-                빔당 게이지 20 -> <span class="nurf">13</span><br>
-                유저에게 주는 빔 대미지 0.7 -> <span class="nurf">0.5</span><br>
-                플레이어에게 빔을 쏘면 0.5초뒤에 다시 사옹 할 수 있게 변경
+            <span class="update_jobname">신규 직업 [시간관리자] 추가</span><br>
+            <span class="update_content"><br>
+            <a href="job-time.html"><b>눌러서 자세히 알아보기</b></a>
+            </span></div>
+               <div class="update_sub_container">
+            <span class="update_jobname">[로봇]</span><br>
+            <span class="update_content">
+            버킷 서버 문제로 인해 로봇의 사용이 불가능 해집니다
+            </span></div>
+               <div class="update_sub_container">
+            <span class="update_jobname">[산타]</span><br>
+            <span class="update_content">
+            탑승 대기시간 7초 -> <span class="buff">1.5초</span><br>
+            탑승 대기중에 대미지가 60% 감소되게 변경 </span><br>
+            썰매타고 올라가는 높이가 낮아짐<br>
+            탑승 대기시간에 쿨타임이 흐르던 버그 수정(텍스트 상으로만 떴음)<br>
+            편안한 휴식에서 힐 되는 기능 삭제<br>
+            썰매가 부서지지 않게 변경<br>
+            썰매가 1초마다 떨어지지 않던 버그 수정<br>
+            썰매가 땅에 떨어지지 않고 벽에 낑겨도 선물이 뿌려지던 버그 수정<br>
+            [폭탄]이 땅에 떨어지면 바로 터지게 변경
+    [폭탄]의 대미지 5 -> <span class="nurf">4</span>
             </span></div>
            </div>
 
-    <h5 class="update_cat">사이트</h5>
+    <br>`,
+        "V1.7.3": `<p>V1.7.3<span class="update_date">(2025-09-18)</span></p>
+        <hr>
+         <h5 class="update_cat">직업</h5>
+            <div class="update_container">
+            <div class="update_sub_container">
+            <span class="update_jobname">[유튜버]</span><br>
+            <span class="update_content">
+            공개 저격 시 즉시 정신적고통을 받게 변경
+            </span></div>
+               <div class="update_sub_container">
+            <span class="update_jobname">[투척수]</span><br>
+            <span class="update_content">
+            연막 지속시간 4초 -> <span class="nurf">2초</span><br>
+            연막이 안생기던 버그 수정<br>
+            </span></div>
+            <div class="update_sub_container">
+            <span class="update_jobname">[광부]</span><br>
+            <span class="update_content">
+            땅에서 올라올 떄 5m 이내에 대미지를 줌 <span class="nurf">2m</span>
+            </span></div>
+               <div class="update_sub_container">
+            <span class="update_jobname">[판사]</span><br>
+            <span class="update_content">
+            살인이 일어났을 때의 판결 확률 비율 65:55 -> <span class="nurf">55:45</span>
+            </span></div>
+            <div class="update_sub_container">
+            <span class="update_jobname">[빙술사]</span><br>
+            <span class="update_content">
+            빔당 게이지 20 -> <span class="nurf">13</span><br>
+            유저에게 주는 빔 대미지 0.7 -> <span class="nurf">0.5</span><br>
+            플레이어에게 빔을 쏘면 0.5초뒤에 다시 사옹 할 수 있게 변경
+            </span></div>
+           </div>
+
+        <h5 class="update_cat">사이트</h5>
         <div class="update_container nojob">
             <div class="update_sub_container">
-                사이트의 시스템 및 UI가 전부 개편됩니다
+            사이트의 시스템 및 UI가 전부 개편됩니다
             </div>
         </div>
-<br>
-    <h5 class="update_cat">기타</h5>
+    <br>
+        <h5 class="update_cat">기타</h5>
         <div class="update_container nojob">
             <div class="update_sub_container">
             직업선택을 하여도 빠른액션을 통해 제한시간및 발광발동 시간을 바꿀 수 있던 버그 수정
             </div>
         </div>
-<br>
-        `,
-        "V1.7.30": `<p>V1.7.3<span class="update_date">(2064-03-28)</span></p>
-        <hr>
-        <h5 class="update_cat">직업</h5>
-<div class="update_container">
-    <div class="update_sub_container">
-        <span class="update_jobname">[크리퍼]</span><br>
-        <span class="update_content">
-        능력1의 대미지 >74 → <span class="nurf">59</span><br>
-        능력3의 쿨타임 15초 → <span class="nurf">32초</span><br>
-   </span></div>
-    <div class="update_sub_container">
-        <span class="update_jobname">[유령]</span><br>
-        <span class="update_content">
-        부활 시 체력 142 → <span class="buff">302</span><br>
-        소환가능 한 망령의 수 32마리 → <span class="buff">52마리</span><br>
-   </span></div>
-    <div class="update_sub_container">
-        <span class="update_jobname">[기생충]</span><br>
-        <span class="update_content">
-        기생충이 죽으면 주변에 죽지 않는 기생충 62마리 소환 → <span class="nurf">5</span><br>
-        기생충이 죽으면 기생당한 유저는 즉사 → <span class="buff">주변에 있는 모든 유저를 즉사</span><br>
-   </span></div>
-   </div>
-   
-<br><h5 class="update_cat">게임</h5>   
-<div class="update_container">
-        <div class="update_sub_container">
-        10연패를 하면 정신좀 차리라는 의미로 하루동안 밴되게 변경
-        </div>
-</div>`
+    <br>
+    `
         // 필요한 만큼 버전 추가...
-    };
+        };
 
     // 2. 필요한 요소들 선택
     const versionSelectButton = document.querySelector('.version-select');
