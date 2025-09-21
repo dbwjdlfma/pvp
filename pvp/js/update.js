@@ -5,7 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
-                "V1.8.0": `<p>V1.8.0.1<span class="update_date">(2025-09-21)</span></p>
+                "V1.8.0": `<p>V1.8.0.2<span class="update_date">(2025-09-21)</span></p>
+            <hr>
+             <h5 class="update_cat">직업</h5>
+                <div class="update_sub_container">
+                <span class="update_jobname">[시간관리자]</span><br>
+                <span class="update_content">
+                능력을 사용한 자리로 돌아갈 때 무적 상태로 변경
+                </span></div>
+        <br>
+                <p>V1.8.0.1<span class="update_date">(2025-09-21)</span></p>
             <hr>
              <h5 class="update_cat">직업</h5>
                 <div class="update_sub_container">
