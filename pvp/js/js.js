@@ -21,10 +21,37 @@ const headerhtml =`
     <div class=info_box>
             <p>버전 : 1.21.6 ~ 1.21.8</p>
             <p>서버 주소 : usefulpvp.kro.kr</p>
-            <p>서버 온오프 알림 관련 문의는 DM 부탁드립니다 🙏</p>
+            <p><span id="server-status">확인 중...</span></p>
     </div>    `
 maincontainer.insertAdjacentHTML("afterbegin", headerhtml);
 
+// 마인크래프트 서버 상태 확인
+function checkServerStatus() {
+  const serverAddress = 'usefulpvp.kro.kr'; // 확인할 서버 주소
+  const serverStatusElement = document.getElementById('server-status');
+
+  if (!serverStatusElement) {
+    console.warn("server-status element not found.");
+    return;
+  }
+
+  fetch(`https://api.mcstatus.io/v2/status/java/${serverAddress}`)
+    .then(response => response.json())
+    .then(data => {
+      if (data.online) {
+        serverStatusElement.innerHTML = `<span style="color: green;">현재 서버는 열려 있습니다.</span> ${data.players.online} / ${data.players.max} )`;
+      } else {
+        serverStatusElement.innerHTML = `<span style="color: red;">현재 서버는 닫혀 있습니다.</span>`;
+      }
+    })
+    .catch(error => {
+      console.error('서버 상태를 가져오는 중 오류 발생:', error);
+      serverStatusElement.textContent = '상태 확인 실패';
+    });
+}
+
+// 페이지가 로드될 때 서버 상태 확인 함수를 호출합니다.
+document.addEventListener('DOMContentLoaded', checkServerStatus);
 
 // 사이드바
 const sidebarButton = document.getElementById("sidebar_button");

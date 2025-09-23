@@ -5,6 +5,76 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.8.1": `<p>V1.8.1<span class="update_date">(2025-09-23)</span></p>
+                    <hr>
+                     <h5 class="update_cat">직업</h5>
+                        <div class="update_container">
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[시간 관리자]</span><br>
+                        <span class="update_content">
+                        능력 사용 지속시간 7초 -> <span class="nurf">4초</span><br>
+                        시공간을 부수지 않으면 1.5의 대미지를 받게 변경<br>
+                        쿨타임이 <span class="nurf">15초</span>로 변경<br>
+                        시공간 근처에 있을 때 대미지가 2받게 변경
+                        </span></div>
+                           <div class="update_sub_container">
+                        <span class="update_jobname">[판사]</span><br>
+                        <span class="update_content">
+                        접근 금지 명령 대미지 3 -> <span class="nurf">1.5</span>
+                        </span></div>
+                           <div class="update_sub_container">
+                        <span class="update_jobname">[거너]</span><br>
+                        <span class="update_content">
+                        거리 상관 없이 대미지가 들어가게 변경<br>
+                        소총 대미지 2.5 -> <span class="nurf">1.5</span><br>
+                        시작 할 때 탄환 10발이 아닌 5발로 받던 버그 수정<br>
+                        소총 -> 산탄총으로 될 때 시간 9초 -> <span class="buff">5초</span><br>
+                        소총 -> 산탄총으로 될 때 탄환 수 5발 -> <span class="buff">10발</span><br>
+                        산탄총의 총알 당 대미지 0.2 -> <span class="nurf">0.15</span><br>
+                        산탄총의 재장전 시간 1.5초 -> <span class="buff">1초</span><br>
+                        산탄총 -> 소총으로 될 때 시간 8초 -> <span class="buff">5초</span>
+                        </span></div>
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[유령]</span><br>
+                        <span class="update_content">
+                        공격시 기절 시간 0.5초 -> <span class="nurf">0.25초</span>
+                        </span></div>
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[정원사]</span><br>
+                        <span class="update_content">
+                        쿨타임 20초 -> <span class="buff">15초</span><br>
+                        능력 사용 후 10초 뒤에 씨앗과 장미가 사라지게 변경
+                        </span></div>
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[산타]</span><br>
+                        <span class="update_content">
+                        썰매가 땅에 착지 했지만 선물이 뿌려지지 않던 버그 수정<br>
+                        썰매가 빨리 떨어지게 변경
+                        </span></div>
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[즐거운 예술가]</span><br>
+                        <span class="update_content">
+                        터진 물감에 맞았을 때 대미지 4 -> <span class="nurf">2</span><br>
+                        터진 물감에 맞았을 때 디버프 지속 시간 2초 -> <span class="nurf">1.5초</span><br>
+                        능력을 사용하기 위한 최소 물감의 수 40개 -> <span class="buff">20개</span>
+                        </span></div>
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[광부]</span><br>
+                        <span class="update_content">
+                        땅에서 나갔을 때 대미지 3 -> <span class="buff">4</span>
+                        </span></div>
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[투척수]</span><br>
+                        <span class="update_content">
+                        연막에 있을 때 1초간 구속2를 받음 -> <span class="nurf">구속1</span><br>
+                        연막 지속시간 2초 -> <span class="buff">5초</span><br>
+                        섬광효과 지속 시간 5초 -> <span class="buff">6초</span><br>
+                        섬광효과를 자신이 맞았을 때 지속 시간 2초 -> <span class="buff">1초</span>
+                        </span></div>
+                       </div>
+                <br>`,
+
+
                 "V1.8.0": `<p>V1.8.0.2<span class="update_date">(2025-09-21)</span></p>
             <hr>
              <h5 class="update_cat">직업</h5>
