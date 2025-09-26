@@ -20,8 +20,7 @@ const headerhtml =`
     </div>
     <div class=info_box>
             <p>버전 : 1.21.6 ~ 1.21.8</p>
-            <p>서버 주소 : usefulpvp.kro.kr</p>
-            <p><span id="server-status">확인 중...</span></p>
+            <p>서버 주소와 서버의 켜짐 유무는 디스코드에 올려집니다</p>
     </div>    `
 maincontainer.insertAdjacentHTML("afterbegin", headerhtml);
 
