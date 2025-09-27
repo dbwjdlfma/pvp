@@ -36,6 +36,8 @@
 
 /* 버전 선택 드롭다운 메뉴 */
 .version-dropdown {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     width:15em;
     background-color: #1e1e1e;
     border: 1px solid gray;
@@ -63,7 +65,7 @@
 
 /* 드롭다운 안의 각 버전 아이템 */
 .version-dropdown-item {
-    
+    display:block;  
     font-size:1.4em;
     padding: 10px;
     cursor: pointer;
@@ -72,6 +74,14 @@
 .version-dropdown-item:hover {
     
     background-color: #333;
+}
+
+.version-dropdown-down {
+    cursor: pointer;
+    border-radius: 5px;
+    grid-column: 1 / -1;  /* 전체 그리드 너비를 차지 */
+    margin-top: 10px;     /* 위쪽 여백 추가 */
+    display: block;       /* 블록으로 표시 */
 }
 
 /* 패치노트 스타일 */
