@@ -118,6 +118,10 @@
     color:rgb(167, 166, 166);
     font-size: 1.3em;
 }
+.update_mapname{
+    color:rgb(241, 168, 71);
+    font-size: 1em;
+}
 .buff{
     color:deepskyblue;
 }
