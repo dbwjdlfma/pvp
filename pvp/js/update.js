@@ -5,6 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.8.3": `<p>V1.8.3<span class="update_date">(2025-09-27)</span></p>
+                                    <hr>
+                                    <h5 class="update_cat">게임 시스템</h5>
+                                    <div class="update_container nojob">
+                                        <div class="update_sub_container">
+                                        이제 킬을 하면 (킬 수x1.5)만큼 공격력이 증가하고<br>
+                                        (킬 수x2)만큼 최대 체력이 증가하며 체력이 6회복 됩니다
+                                        </div>
+                                    </div>
+                                <br>`,
         "V1.8.2": `<p>V1.8.2<span class="update_date">(2025-09-27)</span></p>
                             <hr>
                             <h5 class="update_cat">맵</h5>
