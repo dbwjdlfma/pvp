@@ -45,34 +45,28 @@ class JobLoader {
         // 콘텐츠 렌더링
         let contentHtml = `
             <h2>역할</h2>
-            <p>${job.role}</p><br>
+            <p>${job.role}</p>
             
             <h2>스탯</h2>
-            <p class="stat">HP : ${job.stats.hp} | 쿨타임 : ${job.stats.cooltime} | 이동속도 : ${job.stats.speed} | 공격속도 : ${job.stats.attackSpeed} | 공격력 : ${job.stats.damage}</p><br>
+            <p class="stat">HP : ${job.stats.hp} | 쿨타임 : ${job.stats.cooltime} | 이동속도 : ${job.stats.speed} | 공격속도 : ${job.stats.attackSpeed} | 공격력 : ${job.stats.damage}</p>
             
-            <h2>능력</h2>
-            <p class="skill">${Array.isArray(job.skill) ? job.skill.join('') : job.skill}</p><br>
+            <h2>${job.skillTitle || '능력'}</h2>
+            <p class="skill">${Array.isArray(job.skill) ? job.skill.join('') : job.skill}</p>
         `;
         
-        // 무기 정보가 있는 경우 (총잡이 등)
-        if (job.weapons) {
-            contentHtml += `<h2>무기 정보</h2>`;
-            Object.entries(job.weapons).forEach(([key, weapon]) => {
-                contentHtml += `
-                    <h3>${weapon.name}</h3>
-                    <p class="skill">최대 탄창 수 : ${weapon.maxAmmo}발<br>
-                    데미지 : ${weapon.damage}<br>
-                    ${weapon.description}</p><br>
-                `;
+        // 추가 탭들 처리
+        if (job.extraTabs && Array.isArray(job.extraTabs)) {
+            job.extraTabs.forEach(tab => {
+                contentHtml += `<h2>${tab.title}</h2>`;
+                
+                if (Array.isArray(tab.content)) {
+                    // 배열인 경우 그대로 합쳐서 표시
+                    contentHtml += `<p class="skill">${tab.content.join('')}</p>`;
+                } else {
+                    // 문자열인 경우 그대로 표시
+                    contentHtml += `<p class="skill">${tab.content}</p>`;
+                }
             });
-        }
-        
-        // 시너지가 있는 경우만 추가
-        if (job.synergy) {
-            contentHtml += `
-                <h2>시너지</h2>
-                <p class="skill">${Array.isArray(job.synergy) ? job.synergy.join('') : job.synergy}</p>
-            `;
         }
         
         document.getElementById('job-content').innerHTML = contentHtml;

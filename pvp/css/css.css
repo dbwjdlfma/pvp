@@ -187,7 +187,8 @@ width: 130px;
 .page_list{
     align-items: center;
     display: grid;
-    grid-template-columns: 0.05fr 1fr;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
 }
 
 .page_list a {
