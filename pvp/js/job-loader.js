@@ -51,7 +51,7 @@ class JobLoader {
             <p class="stat">HP : ${job.stats.hp} | 쿨타임 : ${job.stats.cooltime} | 이동속도 : ${job.stats.speed} | 공격속도 : ${job.stats.attackSpeed} | 공격력 : ${job.stats.damage}</p><br>
             
             <h2>능력</h2>
-            <p class="skill">${job.skill}</p><br>
+            <p class="skill">${Array.isArray(job.skill) ? job.skill.join('') : job.skill}</p><br>
         `;
         
         // 무기 정보가 있는 경우 (총잡이 등)
@@ -71,7 +71,7 @@ class JobLoader {
         if (job.synergy) {
             contentHtml += `
                 <h2>시너지</h2>
-                <p class="skill">${job.synergy}</p>
+                <p class="skill">${Array.isArray(job.synergy) ? job.synergy.join('') : job.synergy}</p>
             `;
         }
         
