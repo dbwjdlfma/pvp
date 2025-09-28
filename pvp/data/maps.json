@@ -1,0 +1,96 @@
+{
+  "deathmatch": {
+    "odu": {
+      "name": "오두막",
+      "type": "deathmatch",
+      "mapType": "실내 및 야외",
+      "tags": ["실내 및 야외"],
+      "images": ["image/maps/odu.webp"],
+      "events": null,
+      "favorableJobs": "?"
+    },
+    "sc": {
+      "name": "학교",
+      "type": "deathmatch",
+      "mapType": "실내",
+      "tags": ["실내", "전용 이벤트"],
+      "images": ["image/maps/sc1.webp"],
+      "events": "[시간] 수업시간엔 과학실,도서실,보건실,교실 이외의 공간에 있을 시 대미지를 받는다",
+      "favorableJobs": "?"
+    },
+    "maze": {
+      "name": "The Maze of The Sun",
+      "type": "deathmatch",
+      "mapType": "미로",
+      "tags": ["미로"],
+      "images": ["image/maps/maze.webp"],
+      "events": null,
+      "favorableJobs": "?"
+    },
+    "temple": {
+      "name": "태양의 신전",
+      "type": "deathmatch",
+      "mapType": "공중 및 낙사",
+      "tags": ["공중 및 낙사"],
+      "images": ["image/maps/temple.webp"],
+      "events": null,
+      "favorableJobs": "?"
+    },
+    "forest": {
+      "name": "그늘진 숲",
+      "type": "deathmatch",
+      "mapType": "평지",
+      "tags": ["평지", "전용 이벤트"],
+      "images": ["image/maps/forest.webp"],
+      "events": null,
+      "favorableJobs": "?"
+    },
+    "area": {
+      "name": "The 전장",
+      "type": "deathmatch",
+      "mapType": "평지 및 지하",
+      "tags": ["평지 및 지하"],
+      "images": ["image/maps/area.webp"],
+      "events": null,
+      "favorableJobs": "?"
+    },
+    "ice": {
+      "name": "얼음 집",
+      "type": "deathmatch",
+      "mapType": "실내",
+      "tags": ["실내"],
+      "images": ["image/maps/ice1.webp", "image/maps/ice2.webp"],
+      "events": null,
+      "favorableJobs": "?"
+    },
+    "marjini": {
+      "name": "마진이 게임",
+      "type": "deathmatch",
+      "mapType": "평지",
+      "tags": ["평지", "전용 이벤트"],
+      "images": ["image/maps/marjini.webp"],
+      "events": null,
+      "favorableJobs": "?"
+    },
+    "am": {
+      "name": "어몽어스",
+      "type": "deathmatch",
+      "mapType": "평지",
+      "tags": ["평지", "전용 이벤트"],
+      "images": ["image/maps/am.webp"],
+      "events": null,
+      "favorableJobs": "?"
+    }
+  },
+  "domination": {
+    "ruin": {
+      "name": "폐허",
+      "type": "domination",
+      "mapType": "실내 및 야외",
+      "tags": ["실내 및 야외"],
+      "images": ["image/maps/ruin1.webp", "image/maps/ruin2.webp"],
+      "events": null,
+      "favorableJobs": "?"
+    }
+  }
+}
