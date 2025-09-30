@@ -5,6 +5,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.8.5": `<p>V1.8.5<span class="update_date">(2025-10-03)</span></p>
+                                                    <hr>
+                                                    <h5 class="update_cat">시스템</h5>
+                                                    <div class="update_container nojob">
+                                                        <div class="update_sub_container">
+                                                        직업 선택을 하면 관전자나 관여 안함 상태이여도 플레이어로 바뀐 뒤 직업이 선택되게 변경됩니다<br>
+                                                        빠른 액션을 통해 맵설정도 가능하게 변경됩니다
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="update_cat">직업</h5>
+                                                    <div class="update_container">
+                                                        <div class="update_sub_container">
+                                                        <span class="update_jobname">[로봇]</span><br>
+                                                        <span class="update_content">
+                                                        로봇이 다시 활성화됩니다
+                                                        </span></div>
+                                                    </div>
+                                                <br>`,
         "V1.8.4": `<p>V1.8.4<span class="update_date">(2025-09-30)</span></p>
                                             <hr>
                                             <h5 class="update_cat">직업</h5>
