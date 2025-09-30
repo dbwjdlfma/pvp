@@ -5,6 +5,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.8.4": `<p>V1.8.4<span class="update_date">(2025-09-30)</span></p>
+                                            <hr>
+                                            <h5 class="update_cat">직업</h5>
+                                            <div class="update_container">
+                                                <div class="update_sub_container">
+                                                <span class="update_jobname">[거너]</span><br>
+                                                <span class="update_content">
+                                                시작 할 때 소총 10발로 시작 -> <span class="buff">20발</span>로 시작<br>
+                                                소총으로 바뀔 때 10발을 받음 -> <span class="buff">20발</span>을 받음<br>
+                                                소총 대미지 1.5 -> <span class="nurf">1</span>
+                                                </span></div>
+                                                <div class="update_sub_container">
+                                                <span class="update_jobname">[샌즈]</span><br>
+                                                <span class="update_content">
+                                                5초마다 뼈소리가 나게 변경
+                                                </span></div>
+                                                <div class="update_sub_container">
+                                                <span class="update_jobname">[유령]</span><br>
+                                                <span class="update_content">
+                                                스킬 유지 시간 5초 -> <span class="nurf">3초</span>
+                                                </span></div>
+                                                <div class="update_sub_container">
+                                                <span class="update_jobname">[정원사]</span><br>
+                                                <span class="update_content">
+                                                씨앗이 날라가는 속도가 느려짐
+                                                </span></div>
+                                                <div class="update_sub_container">
+                                                <span class="update_jobname">[시간관리자]</span><br>
+                                                <span class="update_content">
+                                                시공간에 끌어당기는 기능 삭제
+                                                </span></div>
+                                                <div class="update_sub_container">
+                                                <span class="update_jobname">[투척수]</span><br>
+                                                <span class="update_content">
+                                                [토네이도] 아이템 추가<br>
+                                                [토네이도] 사용시 1초뒤에 터지며<br>
+                                                주변에 있는 플레이어를 5초동안 끌어당김<br>
+                                                사용후 15초뒤 재사용 가능
+                                                </span></div>
+                                            </div>
+                                            <h5 class="update_cat">맵</h5>
+                                            <div class="update_container nojob">
+                                                <div class="update_sub_container">
+                                                <span class="update_mapname">[운하]</span>가 추가됩니다
+                                                </div>
+                                            </div>
+                                        <br>`,
         "V1.8.3": `<p>V1.8.3<span class="update_date">(2025-09-27)</span></p>
                                     <hr>
                                     <h5 class="update_cat">게임 시스템</h5>
