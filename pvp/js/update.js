@@ -5,6 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.8.6": `<p>V1.8.6<span class="update_date">(2025-10-01)</span></p>
+                                                            <hr>
+                                                            <h5 class="update_cat">게임 시스템</h5>
+                                                            <div class="update_container nojob">
+                                                                <div class="update_sub_container">
+                                                                빠른 액션을 통한 게임 설정이 변경됩니다<br>
+                                                                <br>
+                                                                게임 상태, 맵, 시작투표가 버튼 식으로 변경됩니다<br>
+                                                                발광시간, 제한시간이 다시 다이얼식으로 변경됩니다<br>
+                                                                맵, 발광,제한 시간이 현재 설정과 동일하게 뜹게 변경됩니다
+                                                                </div>
+                                                            </div>
+                                                        <br>`,
         "V1.8.5": `<p>V1.8.5<span class="update_date">(2025-10-03)</span></p>
                                                     <hr>
                                                     <h5 class="update_cat">시스템</h5>
