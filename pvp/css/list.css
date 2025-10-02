@@ -38,10 +38,25 @@
     vertical-align: middle;
 }
 
-.diff{
-    width: 15px;
-    height: 15px;
+/* Material Icons 별 스타일 */
+.diff-star {
+    font-family: 'Material Symbols Rounded' !important;
+    font-size: 22px !important;
+    color: #666;
+    vertical-align: -5px;
+    margin: 0 -2px;
+    letter-spacing: -2px;
+    line-height: 1;
+}
 
+.diff-star.filled {
+    color: #ffd700;
+    font-variation-settings: 'FILL' 1;
+}
+
+.diff-star.half-filled {
+    color: #ffd700;
+    font-variation-settings: 'FILL' 1;
 }
 
 
