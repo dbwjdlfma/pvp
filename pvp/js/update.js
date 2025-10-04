@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                             <h5 class="update_cat">알려진 문제</h5>
                                             <div class="update_container nojob">
                                             <div class="update_sub_container">
+                                            직업들의 표지판을 통해 사이트로 이동이 불가능함<br>
                                             삑궷츢이 게임시작 전에 스탯을 쌓을 수 있음<br>
                                             운하맵에서 물이 범람된 상태에서 끝나면 다음게임에서 물이 범람된 상태에서 시작함<br>
                                             특정 직업이 능력을 사용하면 투척수의 섬광효과를 무시할 수 있음
