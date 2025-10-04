@@ -5,6 +5,42 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.9.0": `<p>V1.9.0<span class="update_date">(2025-10-04)</span></p>
+                                                    <hr>
+                                                    <h5 class="update_cat">직업</h5>
+                                                    <div class="update_container">
+                                                    <div class="update_sub_container">
+                                                        <span class="update_jobname">신규 직업 [겜블러] 추가</span><br>
+                                                        <span class="update_content"><br>
+                                                        <a href="job.html?id=gambler"><b>눌러서 자세히 알아보기</b></a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="update_sub_container">
+                                                        <span class="update_jobname">신규 직업 [마진이] 추가</span><br>
+                                                        <span class="update_content"><br>
+                                                        <a href="job.html?id=sq"><b>눌러서 자세히 알아보기</b></a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="update_sub_container">
+                                                        <span class="update_jobname">신규 직업 [테러리스트] 추가</span><br>
+                                                        <span class="update_content"><br>
+                                                        <a href="job.html?id=terror"><b>눌러서 자세히 알아보기</b></a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="update_sub_container">
+                                                        <span class="update_jobname">[타이쿠너]</span><br>
+                                                        <span class="update_content">
+                                                        기본 공격력 0.5 -> <span class="buff">1</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="update_sub_container">
+                                                        <span class="update_jobname">[암살자]</span><br>
+                                                        <span class="update_content">
+                                                        은신 스킬 사용 중에는 발광 효과를 받지 않게 변경
+                                                        </span>
+                                                    </div>
+                                                    </div>
+                                                <br>`,
         "V1.8.7": `<p>V1.8.7<span class="update_date">(2025-10-04)</span></p>
                                             <hr>
                                             <h5 class="update_cat">알려진 문제</h5>
