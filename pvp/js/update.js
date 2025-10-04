@@ -5,6 +5,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.8.7": `<p>V1.8.7<span class="update_date">(2025-10-04)</span></p>
+                                            <hr>
+                                            <h5 class="update_cat">알려진 문제</h5>
+                                            <div class="update_container nojob">
+                                            <div class="update_sub_container">
+                                            삑궷츢이 게임시작 전에 스탯을 쌓을 수 있음<br>
+                                            운하맵에서 물이 범람된 상태에서 끝나면 다음게임에서 물이 범람된 상태에서 시작함<br>
+                                            특정 직업이 능력을 사용하면 투척수의 섬광효과를 무시할 수 있음
+                                            </div>
+                                            </div>
+                                            <h5 class="update_cat">직업</h5>
+                                            <div class="update_container">
+                                            <div class="update_sub_container">
+                                                <span class="update_jobname">[산타]</span><br>
+                                                <span class="update_content">
+                                                썰매 탑승 대기시간 1.5초 -> <span class="buff">2초</span><br>
+                                                썰매의 모든 효과들의 지속시간 5초 -> <span class="nurf">3초</span>
+                                                </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                                <span class="update_jobname">[빙술사]</span><br>
+                                                <span class="update_content">
+                                                얼려진 땅근처에 있을 시 오르는 게이지량 30 -> <span class="nurf">10</span>
+                                                </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                                <span class="update_jobname">[거너]</span><br>
+                                                <span class="update_content">
+                                                샷건의 총알 당 대미지 0.15 -> <span class="buff">0.2</span>
+                                                </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                                <span class="update_jobname">[기생충]</span><br>
+                                                <span class="update_content">
+                                                기생 당했을 때 시아가리는 효과 삭제<br>
+                                                기생 당했을 때 멀미 효과 삭제<br>
+                                                기생 당했을 때 2초간 독4가 걸리는 효과 추가<br>
+                                                기생 당한지 5초가 지나면 5초간 0.8의 대미지를 받게 변경<br>
+                                                기생 당한후 5초가 지나면 기생충을 옮길 수 없게 변경
+                                                </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                                <span class="update_jobname">[판사]</span><br>
+                                                <span class="update_content">
+                                                접근 금지 명령을 받는 범위 5m -> <span class="nurf">3m</span><br>
+                                                접금 금지 명령받을 때 범위 안에 있을 시 1.5의 대미지 -> <span class="nurf">0.5</span>
+                                                </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                                <span class="update_jobname">[광부]</span><br>
+                                                <span class="update_content">
+                                                튀어 나올때 대미지 받는 범위 2m -> <span class="buff">3m</span>
+                                                </span>
+                                            </div>
+                                            </div>
+                                        <br>`,
         "V1.8.6": `<p>V1.8.6.1<span class="update_date">(2025-10-03)</span></p>
                                     <hr>
                                     <h5 class="update_cat">맵</h5>
