@@ -610,10 +610,10 @@
       "role": "근거리/광역/서포터",
       "stats": {
         "hp": 20,
-        "cooltime": "X",
         "speed": 0,
         "attackSpeed": 4,
-        "damage": 1
+        "damage": 1,
+        "cooltime": "X"
       },
       "skill": [
         "*단기 능력으로 특정 시간이 지나면 직업은 삭제 됩니다<br>",
