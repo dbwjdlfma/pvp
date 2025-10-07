@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="update_container nojob">
                                 <div class="update_sub_container">
                                     게임 버전이 1.21.6~1.21.8에서 1.21.9~1.21.10으로 변경됩니다</div>
-                                </div>
+                                </div><br>
                                 
                                 <p>V1.9.0.1<span class="update_date">(2025-10-07)</span></p>
                                 <hr>
