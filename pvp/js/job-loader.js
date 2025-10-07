@@ -49,10 +49,15 @@ class JobLoader {
             
             <h2>스탯</h2>
             <p class="stat">HP : ${job.stats.hp} | 쿨타임 : ${job.stats.cooltime} | 이동속도 : ${job.stats.speed} | 공격속도 : ${job.stats.attackSpeed} | 공격력 : ${job.stats.damage}</p>
-            
-            <h2>${job.skillTitle || '능력'}</h2>
-            <p class="skill">${Array.isArray(job.skill) ? job.skill.join('') : job.skill}</p>
         `;
+
+        // 스킬 섹션 추가 (skill이 있는 경우에만)
+        if (job.skill) {
+            contentHtml += `
+                <h2>${job.skillTitle || '능력'}</h2>
+                <p class="skill">${Array.isArray(job.skill) ? job.skill.join('') : job.skill}</p>
+            `;
+        }
         
         // 추가 탭들 처리
         if (job.extraTabs && Array.isArray(job.extraTabs)) {
