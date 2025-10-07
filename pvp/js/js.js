@@ -8,9 +8,9 @@ const headerhtml =`
                         <span class="sidebar_cat">주요 탭</span>
                             <hr>
                             <a href="update.html"><span class="sidebar_item">업데이트 내역</span></a>
-                            <a href="gameplay.html"><span class="sidebar_item">게임 방식</span></a>
                             <a href="jobs-list.html"><span class="sidebar_item">직업 목록</span></a>
                             <a href="map_list.html"><span class="sidebar_item">맵 목록</span></a>
+                            <a href="gameplay.html"><span class="sidebar_item">게임 방식</span></a>
                         <span class="sidebar_cat">기타</span>
                         <hr>
                         <a href="devnote.html"><span class="sidebar_item">개발 노트</span></a>
@@ -19,7 +19,7 @@ const headerhtml =`
                     </div>
     </div>
     <div class=info_box>
-            <p>버전 : 1.21.6 ~ 1.21.8</p>
+            <p>버전 : 1.21.9 ~ 1.21.10</p>
             <p>서버 주소와 서버의 켜짐 유무는 디스코드에 올려집니다</p>
     </div>    `
 maincontainer.insertAdjacentHTML("afterbegin", headerhtml);
