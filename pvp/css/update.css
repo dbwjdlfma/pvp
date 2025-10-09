@@ -75,6 +75,14 @@
     
     background-color: #333;
 }
+.version-dropdown-least {
+    
+    font-size:1.4em;
+    cursor: pointer;
+    border-radius: 5px;
+    grid-column: 1 / -1;   /* 위쪽 여백 추가 */
+    display: block;       /* 블록으로 표시 */
+}
 
 .version-dropdown-down {
     cursor: pointer;
