@@ -1,5 +1,5 @@
 
-/* 직업,맵 리시트 */
+/* 직업,맵 리스트 */
 .list{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -13,12 +13,12 @@
     border: 1px solid rgb(100, 100, 100);
     border-radius: 10px;
     padding: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .list_tag{
  display: grid;
- grid-template-rows:1fr 1fr;
+ grid-template-rows:1fr;
 }
 
 .tag{
@@ -37,28 +37,6 @@
 .tag > img {
     vertical-align: middle;
 }
-
-/* Material Icons 별 스타일 */
-.diff-star {
-    font-family: 'Material Symbols Rounded' !important;
-    font-size: 22px !important;
-    color: #666;
-    vertical-align: -5px;
-    margin: 0 -2px;
-    letter-spacing: -2px;
-    line-height: 1;
-}
-
-.diff-star.filled {
-    color: #ffd700;
-    font-variation-settings: 'FILL' 1;
-}
-
-.diff-star.half-filled {
-    color: #ffd700;
-    font-variation-settings: 'FILL' 1;
-}
-
 
 /* 직업및맵 리스트 */
 .list_content{
@@ -113,22 +91,6 @@
 
 }
 
-
-/* 직업,맵 리스트 */
-.list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 15px;
-}
-
-.list_box {
-    padding: 15px;
-    text-align: left;
-    font-size: 1.2em;
-    border: 1px solid rgb(100, 100, 100);
-    border-radius: 10px;
-    height: 100%;
-}
 
 /* 제목과 검색창을 감싸는 컨테이너 */
 .title-container {
