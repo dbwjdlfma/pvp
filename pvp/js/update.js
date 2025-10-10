@@ -7,6 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const patchNotesData = {
         "V1.9.2": `<p>V1.9.2<span class="update_date">(2025-10-11)</span></p>
                             <hr>
+                            <h5 class="update_cat">버그 수정</h5>
+                    <div class="update_container nojob">
+                    <div class="update_sub_container">
+                        운하맵에서 생기는 버그 수정 <br>
+                직업 표지판으로 사이트 이동이 안되던 버그 수정</div>
+                    </div><br>
                             <h5 class="update_cat">직업</h5>
                             <div class="update_container">
                             <div class="update_sub_container">

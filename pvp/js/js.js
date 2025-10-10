@@ -10,7 +10,7 @@ const headerhtml =`
                             <a href="update.html"><span class="sidebar_item">업데이트 내역</span></a>
                             <a href="jobs-list.html"><span class="sidebar_item">직업 목록</span></a>
                             <a href="map_list.html"><span class="sidebar_item">맵 목록</span></a>
-                            <a href="gameplay.html"><span class="sidebar_item">게임 방식</span></a>
+                            <a href="known.html"><span class="sidebar_item">게임 방식</span></a>
                         <span class="sidebar_cat">기타</span>
                         <hr>
                         <a href="devnote.html"><span class="sidebar_item">개발 노트</span></a>
