@@ -5,6 +5,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.9.2": `<p>V1.9.2<span class="update_date">(2025-10-11)</span></p>
+                            <hr>
+                            <h5 class="update_cat">직업</h5>
+                            <div class="update_container">
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[테러리스트]</span><br>
+                            <span class="update_content">
+                            폭발 대미지 4 -> <span class="nurf">2</span><br>
+                            6m 이내에 폭탄이 있을 시 이펙트가 보이게 변경<br>
+                            33% 확률로 폭탄의 위치가 모두에게 보이게 변경<br>
+                            지뢰 설치중 누군갈 공격하면 즉시 능력이 종료되게 변경
+                            </span>
+                            </div>
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[암살자]</span><br>
+                            <span class="update_content">
+                            쿨타임 15초 -> <span class="buff">13초</span><br>
+                            스킬 적중 시에도 나약함 효과가 남아있던 버그 수정
+                            </span>
+                            </div>
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[겜블러]</span><br>
+                            <span class="update_content">
+                            기본 쿨타임 15초 -> <span class="buff">8초</span><br>
+                            [주사위 굴리기]에서,<br>
+                            1일 때 : 자신에게 데미지 3 -> <span class="buff">1</span><br>
+                            2일 때 : 쿨타임 5초 증가 -> <span class="buff">50% 감소</span><br>
+                            4일 때 : 자신에게 데미지 3 -> <span class="buff">5초간 신속 1, 저항 2 부여</span>
+                            </span>
+                            </div>
+                            </div><br>`,
         "V1.9.1": `<p>V1.9.1<span class="update_date">(2025-10-09)</span></p>
                     <hr>
                     <h5 class="update_cat">한글날 기념</h5>
