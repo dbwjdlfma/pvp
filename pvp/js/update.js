@@ -5,6 +5,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.9.3": `<p>V1.9.3<span class="update_date">(2026-10-11)</span></p>
+                                    <hr>
+                                    <h5 class="update_cat">직업</h5>
+                                    <div class="update_container">
+                                    <div class="update_sub_container">
+                                    <span class="update_jobname">[마진이]</span><br>
+                                    <span class="update_content">
+                                    조기 종료됩니다
+                                    </span>
+                                    </div>
+                                    <div class="update_sub_container">
+                                    <span class="update_jobname">[배터리]</span><br>
+                                    <span class="update_content">
+                                    비활성화 됩니다
+                                    </span>
+                                    </div>
+                                    </div><br>
+                                    <h5 class="update_cat">맵</h5>
+                                    <div class="update_container nojob">
+                                    <div class="update_sub_container">
+                                    [운하], [골목길] 맵이 비활성화 됩니다
+                                    </div>
+                                    </div><br>`,
         "V1.9.2": `<p>V1.9.2<span class="update_date">(2025-10-11)</span></p>
                             <hr>
                             <h5 class="update_cat">버그 수정</h5>
