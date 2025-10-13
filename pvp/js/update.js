@@ -5,6 +5,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.9.4": `<p>V1.9.4<span class="update_date">(2025-10-13)</span></p>
+                                            <hr>
+                                            <h5 class="update_cat">직업</h5>
+                                            <div class="update_container">
+                                            <div class="update_sub_container">
+                                            <span class="update_jobname">[투척수]</span><br>
+                                            <span class="update_content">
+                                            섬광이 터진 위치 주변에선 공격이 불가능 하던 버그 수정<br>
+                                            특정 직업으로 섬광을 풀 수 있던 버그 수정<br>
+                                            자기자신이 섬광에 맞았을 때 섬광 지속시간 1초 -> <span class="buff">0.5초</span><br>
+                                            연막의 크기가 작아지게 변경<br>
+                                            토네이도의 효과를 받는 거리 30m -> <span class="nurf">10m</span>
+                                            </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                            <span class="update_jobname">[유튜버]</span><br>
+                                            <span class="update_content">
+                                            해킹 당했을 때 한번만 자신의 위치가 뜨게 변경
+                                            </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                            <span class="update_jobname">[시간관리자]</span><br>
+                                            <span class="update_content">
+                                            15m이내에 플레이어가 있을 때만 능력 사용 할 수 있게 변경<br>
+                                            산타,쿨쿨이등의 직업의 효과로 능력이 초기화 되지 않게 변경
+                                            </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                            <span class="update_jobname">[기생충]</span><br>
+                                            <span class="update_content">
+                                            감염되고 5초되기전에만 기생충을 옮길 수 있음 -> <span class="buff">5초 이후에만</span>
+                                            </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                            <span class="update_jobname">[광부]</span><br>
+                                            <span class="update_content">
+                                            능력이 작동안되던 버그 수정<br>
+                                            능력 지속시간 10초 -> <span class="buff">5초</span><br>
+                                            </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                            <span class="update_jobname">[쿨쿨이]</span><br>
+                                            <span class="update_content">
+                                            자지 못했을 때 받는 디버프 삭제
+                                            </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                            <span class="update_jobname">[건축가]</span><br>
+                                            <span class="update_content">
+                                            벽이 자동으로 날라가는 시간 1초 -> <span class="buff">10초</span><br>
+                                            벽이 사라지는 거리 삭제
+                                            </span>
+                                            </div>
+                                            <div class="update_sub_container">
+                                            <span class="update_jobname">[테러리스트]</span><br>
+                                            <span class="update_content">
+                                            게임이 시작되고 20초가 지나야 능력이 발동되게 변경<br>
+                                            설치 가능한 폭탄의 수 4개 -> <span class="buff">5개</span><br>
+                                            설치 단계가 지나야 폭탄의 위치가 보이게 변경<br>
+                                            설치 단계에서 웅크렸을 때 속도 0.2 증가 -> <span class="buff">0.25 증가</span><br>
+                                            폭탄이 터지는 거리 4m -> <span class="nurf">3m</span><br>
+                                            폭탄 위치가 보이는 거리가 12m로 조정<br>
+                                            폭탄의 위치가 테러리스트에게도 안보이던 버그 수정
+                                            </span>
+                                            </div>
+                                            </div><br>`,
         "V1.9.3": `<p>V1.9.3<span class="update_date">(2026-10-11)</span></p>
                                     <hr>
                                     <h5 class="update_cat">직업</h5>

@@ -15,7 +15,6 @@ const headerhtml =`
 
                         <a href="known.html"><span class="sidebar_item">알려진 버그</span></a>
                         <a href="devnote.html"><span class="sidebar_item">개발 노트</span></a>
-                            <a href="suggest.html"><span class="sidebar_item">건의 하기</span></a>
                         
                     </div>
     </div>
