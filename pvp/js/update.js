@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="update_sub_container">
                 직업 선택 시 어떤직업이 선택 되었는지 띄워집니다<br>
                 빠른 액션에 직업 선택 탭이 추가됩니다<br>
-                직업 선택탭에서 원하는 직업을 선택 할 수 있습니다
+                직업 선택 탭에선 원하는 직업을 선택 할 수 있습니다
                 </div>
                 </div>
                 <br>
