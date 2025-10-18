@@ -20,13 +20,14 @@ const headerhtml =`
     </div>
     <div class=info_box>
             <p>버전 : 1.21.9 ~ 1.21.10</p>
-            <p>서버 주소와 서버의 켜짐 유무는 디스코드에 올려집니다</p>
+            <p>서버 주소 : usefulpvp.duckdns.org</p>
+            <p id="server-status">서버 상태 불러오는 중...</p>
     </div>    `
 maincontainer.insertAdjacentHTML("afterbegin", headerhtml);
 
 // 마인크래프트 서버 상태 확인
 function checkServerStatus() {
-  const serverAddress = 'usefulpvp.kro.kr'; // 확인할 서버 주소
+  const serverAddress = 'usefulpvp.duckdns.org'; // 확인할 서버 주소
   const serverStatusElement = document.getElementById('server-status');
 
   if (!serverStatusElement) {
