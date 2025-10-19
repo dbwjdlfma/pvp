@@ -39,7 +39,7 @@ function checkServerStatus() {
     .then(response => response.json())
     .then(data => {
       if (data.online) {
-        serverStatusElement.innerHTML = `<span style="color: green;">현재 서버는 열려 있습니다.</span> ${data.players.online} / ${data.players.max} )`;
+        serverStatusElement.innerHTML = `<span style="color: green;">현재 서버는 열려 있습니다.</span> (${data.players.online} / ${data.players.max})`;
       } else {
         serverStatusElement.innerHTML = `<span style="color: red;">현재 서버는 닫혀 있습니다.</span>`;
       }
