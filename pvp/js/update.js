@@ -5,6 +5,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.10.1": `
+                    <p>V1.10.1<span class="update_date">(2025-10-24)</span></p>
+                        <hr>
+                        <h5 class="update_cat">직업</h5>
+                        <div class="update_container">
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[마법사]</span><br>
+                        <span class="update_content">
+                        분신의 체력 1 -> <span class="buff">20</span><br>
+                        분신이 2m이내에 있으면 0.1의 대미지가 들어가게 변경
+                        </span>
+                        </div>
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[빙술사]</span><br>
+                        <span class="update_content">
+                        얼음 빔 대미지 0.2 -> <span class="nurf">0.05</span>
+                        </span>
+                        </div>
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[유령]</span><br>
+                        <span class="update_content">
+                        능력 지속시간 3초 -> <span class="buff">5초</span><br>
+                        부활이 안되던 버그 수정
+                        </span>
+                        </div>
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[겜블러]</span><br>
+                        <span class="update_content">
+                        [주사위 굴리기] 발동 가능 범위 5m -> <span class="buff">7m</span><br>
+                        [겜블러의 행운] 기본 발동 확률 10% -> <span class="buff">30%</span>
+                        </span>
+                        </div>
+                        </div>
+                        <br>`,
         "V1.10.0": `
             <p>V1.10.0<span class="update_date">(2025-10-18)</span></p>
                 <hr>
