@@ -6,6 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
         "V1.10.1": `
+        <p>V1.10.1.1<span class="update_date">(2025-10-24)</span></p>
+                        <hr>
+                        <h5 class="update_cat">직업</h5>
+                        <div class="update_container">
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[투척수]</span><br>
+                        <span class="update_content">
+                        연막의 쿨타임 표기가 10초가 아닌 15초로 변경
+                        </span>
+                        </div>
+                        </div>
+                        <br>,
                     <p>V1.10.1<span class="update_date">(2025-10-24)</span></p>
                         <hr>
                         <h5 class="update_cat">직업</h5>
