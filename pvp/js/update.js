@@ -6,6 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
         "V1.10.1": `
+        <p>V1.10.1.2<span class="update_date">(2025-10-29)</span></p>
+                        <hr>
+                        <h5 class="update_cat">직업</h5>
+                        <div class="update_container">
+                        <div class="update_sub_container">
+                        <span class="update_jobname">[건축가]</span><br>
+                        <span class="update_content">
+                        벽크기가 3X13이 아닌 13X3으로 표기 되던 오류를 수정했습니다
+                        </span>
+                        </div>
+                        </div>
+                        <br>,
         <p>V1.10.1.1<span class="update_date">(2025-10-24)</span></p>
                         <hr>
                         <h5 class="update_cat">직업</h5>
