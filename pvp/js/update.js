@@ -5,6 +5,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.10.2": `
+            <p>V1.10.2<span class="update_date">(2025-10-30)</span></p>
+                    <hr>
+                    <h5 class="update_cat">직업</h5>
+                    <div class="update_container">
+                    <div class="update_sub_container">
+                    <span class="update_jobname">[샌즈]</span><br>
+                    <span class="update_content">
+                    체력 1 -> <span class="buff">2</span>
+                    </span>
+                    </div>
+                    <div class="update_sub_container">
+                    <span class="update_jobname">[유령]</span><br>
+                    <span class="update_content">
+                    부활 대기 시간 3초 -> <span class="buff">1.5초</span><br>
+                    부활을 하여도 발광,투명,나약함이 지속 되던 버그 수정
+                    </span>
+                    </div>
+                    <div class="update_sub_container">
+                    <span class="update_jobname">[뱀파이어]</span><br>
+                    <span class="update_content">
+                    흡혈 대미지 3 -> <span class="buff">4</span>
+                    </span>
+                    </div>
+                    <div class="update_sub_container">
+                    <span class="update_jobname">[개생충]</span><br>
+                    <span class="update_content">
+                    3m 이내에 누군가 있을 때만 능력을 쓸 수 있다는 문구 삭제
+                    </span>
+                    </div>
+                    </div>
+                    <br>`,
         "V1.10.1": `
         <p>V1.10.1.2<span class="update_date">(2025-10-29)</span></p>
                         <hr>
