@@ -5,6 +5,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.11.0": `
+                    <p>V1.11.0<span class="update_date">(2025-11-01)</span></p>
+                            <hr>
+                            <h5 class="update_cat">장비</h5>
+                            <div class="update_container nojob">
+                            <div class="update_sub_container">
+                            신규 기능 "장비"가 추가됩니다<br>
+                            장비는 빠른액션을 통해 장착이 가능합니다<br>
+                            <br>
+                            <b>추가되는 장비</b><br>
+                            <span class="update_jobname">[파이터의 헤드기어]</span><br>
+                            <span class="update_content">최대체력이 4증가 합니다</span><br>
+                            <span class="update_jobname">[건축가의 건축자재]</span><br>
+                            <span class="update_content">10초동안 가만히 있다면 웅크리기키를 눌러 바라보는 방향에 2X3크기의 벽을 생성합니다<br>
+                            벽의 한블록 당 체력은 10이며 벽이 10초간 유지되거나 한개의 블록을 부순다면 모든 블록이 사라집니다</span>
+                            </div>
+                            </div>
+                            <br>
+                            <h5 class="update_cat">직업</h5>
+                            <div class="update_container">
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[유령]</span><br>
+                            <span class="update_content">
+                            놀람 효과 삭제<br>
+                            망령이 소환되는 시간 삭제<br>
+                            부활 후 망령이 소환되는 최대수 삭제<br>
+                            부활 후 생성되는 망령이 강화된 망령으로 변경<br>
+                            망령이 누군갈 공격 시 랜덤한 7마리의 망령이 죽게 변경(강화된 망령 포함)<br><br>
+                            망령의 체력 2 -> <span class="buff">10</span><br>
+                            강화된 망령의 체력 2 -> <span class="buff">20</span><br>
+                            강화된 망령의 대미지 1.5 -> <span class="buff">2</span>
+                            </span>
+                            </div>
+                            </div>
+                            <br>`,
         "V1.10.2": `
             <p>V1.10.2<span class="update_date">(2025-10-30)</span></p>
                     <hr>
