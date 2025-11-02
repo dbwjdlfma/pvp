@@ -5,6 +5,73 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.11.1": `
+                    <p>V1.11.1<span class="update_date">(2025-11-02)</span></p>
+                            <hr>
+                            <h5 class="update_cat">데스매치 맵</h5>
+                            <div class="update_container">
+                            <div class="update_sub_container">
+                            폐허의 옛모습인 [관강지]가 추가됩니다
+                            </div>
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[오두막]</span><br>
+                            <span class="update_content">
+                            오두막 뒷뜰이 사라집니다<br>
+                            오두막 1층에 새로운 공간이 생깁니다<br>
+                            오두막 1층 창고에서 2층으로 올라갈 수 있는 구멍이 사라집니다<br>
+                            오두막 2층에 새로운 방이 추가됩니다
+                            </span>
+                            </div>
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[학교]</span><br>
+                            <span class="update_content">
+                            교무실에 뒷문이 추가 됩니다
+                            </span>
+                            </div>
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[태양의 신전]</span><br>
+                            <span class="update_content">
+                            피라미드 위로 올라가는 길이 삭제됩니다<br>
+                            피라미드의 내부 구조가 변경됩니다
+                            </span>
+                            </div>
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[The 전장]</span><br>
+                            <span class="update_content">
+                            유리벽 부분이 얇아지고 가운데에 구멍이 생깁니다<br>
+                            사다리 구조물의 높이가 한칸 낮아집니다
+                            </span>
+                            </div>
+                            </div>
+                            <br>
+                            <h5 class="update_cat">직업</h5>
+                            <div class="update_container">
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[유튜버]</span><br>
+                            <span class="update_content">
+                            현재 구독자 수가 자신한테만 뜨게 변경
+                            </span>
+                            </div>
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[기생충]</span><br>
+                            <span class="update_content">
+                            기상 당했을 때 초당 대미지 0.8 -> <span class="buff">1.5</span>
+                            </span>
+                            </div>
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[광부]</span><br>
+                            <span class="update_content">
+                            튀어 오르기 사용 가능 시간 1.5초 -> <span class="buff">3초</span>
+                            </span>
+                            </div>
+                            <div class="update_sub_container">
+                            <span class="update_jobname">[빙술사]</span><br>
+                            <span class="update_content">
+                            얼음빔의 수 4개 -> <span class="buff">5개</span>
+                            </span>
+                            </div>
+                            </div>
+                            <br>`,
         "V1.11.0": `
                     <p>V1.11.0<span class="update_date">(2025-11-01)</span></p>
                             <hr>
