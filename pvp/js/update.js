@@ -5,6 +5,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.11.2": `
+                            <p>V1.11.2<span class="update_date">(2025-11-09)</span></p>
+                                    <hr>
+                                    <h5 class="update_cat">직업</h5>
+                                    <div class="update_container">
+                                    <div class="update_sub_container">
+                                    <span class="update_jobname">신규 직업 [과학자] 추가</span><br>
+                                    <span class="update_content"><br>
+                                    <a href="job.html?id=sci"><b>눌러서 자세히 알아보기</b></a>
+                                    </span>
+                                    </div>
+                                    <div class="update_sub_container">
+                                    <span class="update_jobname">[광부]</span><br>
+                                    <span class="update_content">
+                                    건축가의 벽, 장비의 벽을 뚫을 수 없게 변경<br>
+                                    뒤로 이동이 가능하게 변경<br>
+                                    상하좌우 이동을 할 때 한칸 높이 벽을 올라가고 내려갈 수 있게 변경
+                                    </span>
+                                    </div>
+                                    </div>
+                                    <br>
+                                    <h5 class="update_cat">시스템</h5>
+                                    <div class="update_container nojob">
+                                    <div class="update_sub_container">
+                                    체력 회복 시간이 1초 1회복으로 변경됩니다<br>
+                                    공격을 하거나 공격을 받는다면 자동 회복이 되지 않게 변경됩니다
+                                    </div>
+                                    </div>
+                                    <br>`,
         "V1.11.1": `
                     <p>V1.11.1<span class="update_date">(2025-11-02)</span></p>
                             <hr>
