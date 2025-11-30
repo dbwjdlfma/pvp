@@ -6,16 +6,16 @@
       "mapType": "실내 및 야외",
       "tags": ["실내 및 야외"],
       "images": ["image/maps/odu.webp"],
-      "events": null,
+      "events": ["특정 시간 마다 지하길에 독가스가 퍼짐<br>폐허와 오두막에 폭탄이 두번 떨어짐<br>특정 위치를 기준으로 월드보더가 축소됨"],
       "favorableJobs": "?"
     },
     "sc": {
       "name": "학교",
       "type": "deathmatch",
       "mapType": "실내",
-      "tags": ["실내", "전용 이벤트"],
+      "tags": ["실내"],
       "images": ["image/maps/sc1.webp"],
-      "events": "[시간] 수업시간엔 과학실,도서실,보건실,교실 이외의 공간에 있을 시 대미지를 받는다",
+      "events": "교무실을 통해 종을 칠 수 있음<br>이후 수업시간이 되며 이후 다시 쉬는시간이됨<br> 수업시간엔 과학실,도서실,보건실,교실 이외의 공간에 있을 시 대미지를 받는다<br><br>특정 시간 마다 지하길에 독가스가 퍼트립니다<br>이후 폐허와 오두막에 폭탄을 2번 떨어져 폭파시킵니다 <br>이후 랜덤한 위치를 기준으로 월드보더가 줄어듭니다",
       "favorableJobs": "?"
     },
     "maze": {
@@ -24,7 +24,7 @@
       "mapType": "미로",
       "tags": ["미로"],
       "images": ["image/maps/maze.webp"],
-      "events": null,
+      "events": "특정 시간 마다 3번의 월드보더 축소 공지 이후 월드보더가 줄어듭니다",
       "favorableJobs": "?"
     },
     "temple": {
@@ -33,14 +33,14 @@
       "mapType": "공중 및 낙사",
       "tags": ["공중 및 낙사"],
       "images": ["image/maps/temple.webp"],
-      "events": null,
+      "events": "특정 시간마다 가운데를 포함한 모든 섬에 거대한 검이 떨어집니다<br>거대한검이 떨어지는 섬은 랜덤으로 정해집니다",
       "favorableJobs": "?"
     },
     "forest": {
       "name": "그늘진 숲",
       "type": "deathmatch",
       "mapType": "평지",
-      "tags": ["평지", "전용 이벤트"],
+      "tags": ["평지"],
       "images": ["image/maps/forest.webp"],
       "events": null,
       "favorableJobs": "?"
@@ -51,7 +51,7 @@
       "mapType": "평지 및 지하",
       "tags": ["평지 및 지하"],
       "images": ["image/maps/area.webp"],
-      "events": null,
+      "events": "특정 시간 마다 3번의 이벤트 마다 가운데를 기준으로 월드보더가 2초간 5칸씩 줄어듭니다<br>마지막으로 줄어들 땐 맵의 형태가 변형이 됩니다",
       "favorableJobs": "?"
     },
     "ice": {
@@ -67,18 +67,36 @@
       "name": "마진이 게임",
       "type": "deathmatch",
       "mapType": "평지",
-      "tags": ["평지", "전용 이벤트"],
+      "tags": ["평지"],
       "images": ["image/maps/marjini.webp"],
-      "events": null,
+      "events": "특정 시간 마다 3번의 이벤트 마다 가운데를 기준으로 월드보더가 2초간 5칸씩 줄어듭니다",
       "favorableJobs": "?"
     },
     "am": {
       "name": "어몽어스",
       "type": "deathmatch",
       "mapType": "평지",
-      "tags": ["평지", "전용 이벤트"],
+      "tags": ["평지"],
       "images": ["image/maps/am.webp"],
-      "events": null,
+      "events": "특정 시간 마다 원자로가 폭발을해  상부엔진,하부엔진,보안실,의무실,전기실의 접근이 금지 됩니다<br>우주 쓰레기와의 충돌로 항해실,무기고,산소공급실,보호막 제어실,통신실의 접근이 금지됩니다<br>창고 쓰레기통의 고장으로 관리실 창고의 접근이 금지 됩니다",
+      "favorableJobs": "?"
+    },
+        "canal": {
+      "name": "운하",
+      "type": "deathmatch",
+      "mapType": "야외",
+      "tags": ["야외"],
+      "images": [""],
+      "events": "",
+      "favorableJobs": "?"
+    },
+        "tour": {
+      "name": "관광지",
+      "type": "deathmatch",
+      "mapType": "실내 및 야외",
+      "tags": ["실내 및 야외"],
+      "images": [""],
+      "events": "특정 시간마다 3번의 이벤트 마다 가운데를 기준으로 월드보더가 2초간 5칸씩 줄어듭니다",
       "favorableJobs": "?"
     }
   },
