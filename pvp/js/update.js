@@ -5,6 +5,117 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 1. 패치노트 데이터 (실제 데이터는 여기에 추가)
     const patchNotesData = {
+        "V1.12.0": `
+                            <p>V1.12.0<span class="update_date">(2025-11-30)</span></p>
+                            <hr>
+                            <strong style="font-size:1.3em"><br>안녕하세요? 시스템을 만드니 생각보다 빨리 패치가 되었네요 히히 😎</strong><br><br>
+                            <hr>
+                            <h5 class="update_cat">시스템</h5>
+                            <div class="update_container nojob">
+                                <div class="update_sub_container">
+                                    모든 게임모드의 제한시간이 5분으로 고정 되고 발광 시간이 삭제됩니다<br>
+                                    모든 맵에 맵의 활동범위를 줄이는 이벤트가 발동합니다<br>
+                                    <br>
+                                    이벤트가 발동되는 주기는 설정을 통해 변경이 가능하며<br>
+                                    월드보더 축소 시간도 설정으로 변경이 가능합니다<br>
+                                    단 The 전장,마진이게임,관광지는 포함되지 않습니다<br>
+                                    <br>
+                                    독가스에 있을 때 2의 대미지를 받으며<br>
+                                    월드보더의 경우 블록당 0.3의 대미지를 받습니다<br>
+                                    거대한검이 떨어질 떄 10m 이내에 8의 대미지를 주며<br>
+                                    떨어진 이후  6m 이내에 있다면 2의 대미지를 받습니다
+                                </div>
+                            </div>
+                            <br>
+                            <h5 class="update_cat">시스템2 - 데스매치 맵</h5>
+                            <div class="update_container">
+                                <div class="update_sub_container">
+                                    <span class="update_jobname">[오두막]</span><br>
+                                    <span class="update_content">
+                                        특정 시간 마다 지하길에 독가스가 퍼트립니다<br>
+                                        이후 폐허와 오두막에 폭탄을 2번 떨어져 폭파시킵니다<br>
+                                        이후 랜덤한 위치를 기준으로 월드보더가 줄어듭니다
+                                    </span>
+                                </div>
+                                <div class="update_sub_container">
+                                    <span class="update_jobname">[학교]</span><br>
+                                    <span class="update_content">
+                                        독가스가 발포되는 층을 알려주며<br>
+                                        이후 독가스가 발포됩니다<br>
+                                        이후 월드보더의 기준 위치를 알려주며<br>
+                                        이후 월드보더가 줄어든다
+                                    </span>
+                                </div>
+                                <div class="update_sub_container">
+                                    <span class="update_jobname">[The Maze of The Sun]</span><br>
+                                    <span class="update_content">
+                                        3번의 월드보더 축소 공지 이후<br>
+                                        월드보더가 줄어듭니다
+                                    </span>
+                                </div>
+                                <div class="update_sub_container">
+                                    <span class="update_jobname">[태양의 신전]</span><br>
+                                    <span class="update_content">
+                                        가운데를 포함한 모든 섬에 섬이 거대한 검이 떨어집니다
+                                    </span>
+                                </div>
+                                <div class="update_sub_container">
+                                    <span class="update_jobname">[The 전장]</span><br>
+                                    <span class="update_content">
+                                        3번의 이벤트 마다 가운데를 기준으로 월드보더가 2초간 5칸씩 줄어듭니다<br>
+                                        마지막으로 줄어들 땐 맵의 형태가 변형이 됩니다
+                                    </span>
+                                </div>
+                                <div class="update_sub_container">
+                                    <span class="update_jobname">[마진이 게임]</span><br>
+                                    <span class="update_content">
+                                        3번의 이벤트 마다 가운데를 기준으로 월드보더가 2초간 5칸씩 줄어듭니다<br>
+                                        맵의 시작 위치가 맵의 중앙으로 변경됩니다<br>
+                                        맵 뒷편이 사라집니다
+                                    </span>
+                                </div>
+                                <div class="update_sub_container">
+                                    <span class="update_jobname">[어몽어스]</span><br>
+                                    <span class="update_content">
+                                        원자로가 폭발을해  상부엔진,하부엔진,보안실,의무실,전기실의 접근이 금지 됩니다<br>
+                                        우주 쓰레기와의 충돌로 항해실,무기고,산소공급실,보호막 제어실,통신실의 접근이 금지됩니다<br>
+                                        창고 쓰레기통의 고장으로 관리실 창고의 접근이 금지 됩니다
+                                    </span>
+                                </div>
+                                <div class="update_sub_container">
+                                    <span class="update_jobname">[운하]</span><br>
+                                    <span class="update_content">
+                                        이벤트 없음
+                                    </span>
+                                </div>
+                                <div class="update_sub_container">
+                                    <span class="update_jobname">[관광지]</span><br>
+                                    <span class="update_content">
+                                        3번의 이벤트 마다 가운데를 기준으로 월드보더가 2초간 5칸씩 줄어듭니다
+                                    </span>
+                                </div>
+                            </div>
+                            <br>
+                            <h5 class="update_cat">직업</h5>
+                            <div class="update_container">
+                                <div class="update_sub_container">
+                                    <span class="update_jobname">[건축가]</span><br>
+                                    <span class="update_content">
+                                        벽을 20번 때린다면 모든 벽이 부서지게 변경됩니다
+                                    </span>
+                                </div>
+                                <div class="update_sub_container">
+                                    <span class="update_jobname">[삑궷츢]</span><br>
+                                    <span class="update_content">
+                                        스킬 사용 위해 요구되는 최소 '걸은 블록 수' 25 -> <span class="buff">10</span><br>
+                                        스킬 사용 시 돌진 시간은 '걸은 블록 수'에 비례함 ( 1블록 당 4틱 )<br>
+                                        공격 적중 시 공격 당한 플레이어에게 대미지 3<br>
+                                        걸은 블록 수'가 25일 때 공격 적중 시 공격 당한 플레이어는 3초간 기절<br>
+                                        쿨타임 삭제
+                                    </span>
+                                </div>
+                            </div>
+                            <br>`,
         "V1.11.2": `<p>V1.11.2.2<span class="update_date">(2025-11-12)</span></p>
                                     <hr>
                                     <h5 class="update_cat">기타</h5>
